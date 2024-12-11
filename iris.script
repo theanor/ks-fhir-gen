@@ -1,0 +1,33 @@
+ zn "%SYS"
+ d ##class(Security.Users).UnExpireUserPasswords("*")
+
+ s namespace = "FHIR"
+ 
+ d ##class(%Library.EnsembleMgr).EnableNamespace(namespace)
+ 
+ zn "HSLIB"
+  
+ d ##class(HS.Util.Installer.Foundation).Install(namespace)
+ 
+ s ^SYS("Security","CSP","AllowPrefix","/csp/healthshare/fhir/","%UnitTest.")=1
+ 
+ zn namespace
+
+ s ^RepositoryRoot="/irisrun/repo"  
+ s ^UnitTestResourcesRoot=^RepositoryRoot_"/test/resource"
+ s ^UnitTestRuntimeRoot=^RepositoryRoot_"/test/runtime"
+ s ^UnitTestRoot=^RepositoryRoot_"/test/src"
+ 
+ ;
+ ; FHIR server not required for now, left for future extensions
+ ;
+ ;s appKey = "/fhir/r4"
+ ;s strategyClass = "HS.FHIRServer.Storage.JsonAdvSQL.InteractionsStrategy"
+ ;s metadataPackages = $lb("hl7.fhir.r4.core@4.0.1","hl7.fhir.us.core@3.1.0")
+
+ ;d ##class(HS.FHIRServer.Installer).InstallNamespace()
+ ;d ##class(HS.FHIRServer.Installer).InstallInstance(appKey, strategyClass, metadataPackages)
+
+ zpm "load /irisrun/repo -v"
+
+ halt

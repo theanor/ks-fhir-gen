@@ -1,0 +1,4475 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [ {
+    "fullUrl": "urn:uuid:74ab949d-17ac-3309-83a0-13b4405c66aa",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "74ab949d-17ac-3309-83a0-13b4405c66aa",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 8
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "74ab949d-17ac-3309-83a0-13b4405c66aa"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "Fitchburg Outpatient Clinic",
+      "telecom": [ {
+        "system": "phone",
+        "value": "978-342-9781 Or 978-342-9781"
+      } ],
+      "address": [ {
+        "line": [ "881 Main Street" ],
+        "city": "Fitchburg",
+        "state": "MA",
+        "postalCode": "01420",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|74ab949d-17ac-3309-83a0-13b4405c66aa"
+    }
+  }, {
+    "fullUrl": "urn:uuid:81c75a54-2b95-3fdf-9327-b74df8630869",
+    "resource": {
+      "resourceType": "Location",
+      "id": "81c75a54-2b95-3fdf-9327-b74df8630869",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "81c75a54-2b95-3fdf-9327-b74df8630869"
+      } ],
+      "status": "active",
+      "name": "Fitchburg Outpatient Clinic",
+      "telecom": [ {
+        "system": "phone",
+        "value": "978-342-9781 Or 978-342-9781"
+      } ],
+      "address": {
+        "line": [ "881 Main Street" ],
+        "city": "Fitchburg",
+        "state": "MA",
+        "postalCode": "01420",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.80521,
+        "latitude": 42.586487
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "74ab949d-17ac-3309-83a0-13b4405c66aa"
+        },
+        "display": "Fitchburg Outpatient Clinic"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869"
+    }
+  }, {
+    "fullUrl": "urn:uuid:17a4bae5-8b64-34d7-8144-b428be027bd0",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "17a4bae5-8b64-34d7-8144-b428be027bd0",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 5
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "17a4bae5-8b64-34d7-8144-b428be027bd0"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "NURSE ON CALL",
+      "telecom": [ {
+        "system": "phone",
+        "value": "5088451232"
+      } ],
+      "address": [ {
+        "line": [ "512 MAIN STREET, SUITE 211" ],
+        "city": "SHREWSBURY",
+        "state": "MA",
+        "postalCode": "015456406",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|17a4bae5-8b64-34d7-8144-b428be027bd0"
+    }
+  }, {
+    "fullUrl": "urn:uuid:07aec8d6-287d-30ac-81a8-752782163466",
+    "resource": {
+      "resourceType": "Location",
+      "id": "07aec8d6-287d-30ac-81a8-752782163466",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "07aec8d6-287d-30ac-81a8-752782163466"
+      } ],
+      "status": "active",
+      "name": "NURSE ON CALL",
+      "telecom": [ {
+        "system": "phone",
+        "value": "5088451232"
+      } ],
+      "address": {
+        "line": [ "512 MAIN STREET, SUITE 211" ],
+        "city": "SHREWSBURY",
+        "state": "MA",
+        "postalCode": "015456406",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.71808471110307,
+        "latitude": 42.295109499999995
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "17a4bae5-8b64-34d7-8144-b428be027bd0"
+        },
+        "display": "NURSE ON CALL"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|07aec8d6-287d-30ac-81a8-752782163466"
+    }
+  }, {
+    "fullUrl": "urn:uuid:ae88fd02-4911-3625-9e97-85b626ed3b0b",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "ae88fd02-4911-3625-9e97-85b626ed3b0b",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 2
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "ae88fd02-4911-3625-9e97-85b626ed3b0b"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "FAIRHAVEN HEALTHCARE CENTER INC.",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9784583388"
+      } ],
+      "address": [ {
+        "line": [ "476 VARNUM AVE" ],
+        "city": "LOWELL",
+        "state": "MA",
+        "postalCode": "018542122",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|ae88fd02-4911-3625-9e97-85b626ed3b0b"
+    }
+  }, {
+    "fullUrl": "urn:uuid:1cec266a-be2a-3ece-87ba-324a72d79e6f",
+    "resource": {
+      "resourceType": "Location",
+      "id": "1cec266a-be2a-3ece-87ba-324a72d79e6f",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "1cec266a-be2a-3ece-87ba-324a72d79e6f"
+      } ],
+      "status": "active",
+      "name": "FAIRHAVEN HEALTHCARE CENTER INC.",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9784583388"
+      } ],
+      "address": {
+        "line": [ "476 VARNUM AVE" ],
+        "city": "LOWELL",
+        "state": "MA",
+        "postalCode": "018542122",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.34721987550876,
+        "latitude": 42.6443795
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "ae88fd02-4911-3625-9e97-85b626ed3b0b"
+        },
+        "display": "FAIRHAVEN HEALTHCARE CENTER INC."
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|1cec266a-be2a-3ece-87ba-324a72d79e6f"
+    }
+  }, {
+    "fullUrl": "urn:uuid:4cf79e95-2815-3a4c-a3b8-951fe548dd27",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "4cf79e95-2815-3a4c-a3b8-951fe548dd27",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 57
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 504
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 131
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 58
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "4cf79e95-2815-3a4c-a3b8-951fe548dd27"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "BERKSHIRE FAMILY PRACTICE ASSOCIATES PC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "4134453131"
+      } ],
+      "address": [ {
+        "line": [ "20 ELM ST" ],
+        "city": "PITTSFIELD",
+        "state": "MA",
+        "postalCode": "012016502",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|4cf79e95-2815-3a4c-a3b8-951fe548dd27"
+    }
+  }, {
+    "fullUrl": "urn:uuid:79eb760e-d3a4-3d2e-b487-bc46f62af19d",
+    "resource": {
+      "resourceType": "Location",
+      "id": "79eb760e-d3a4-3d2e-b487-bc46f62af19d",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "79eb760e-d3a4-3d2e-b487-bc46f62af19d"
+      } ],
+      "status": "active",
+      "name": "BERKSHIRE FAMILY PRACTICE ASSOCIATES PC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "4134453131"
+      } ],
+      "address": {
+        "line": [ "20 ELM ST" ],
+        "city": "PITTSFIELD",
+        "state": "MA",
+        "postalCode": "012016502",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -73.2448206979669,
+        "latitude": 42.4458896
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "4cf79e95-2815-3a4c-a3b8-951fe548dd27"
+        },
+        "display": "BERKSHIRE FAMILY PRACTICE ASSOCIATES PC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|79eb760e-d3a4-3d2e-b487-bc46f62af19d"
+    }
+  }, {
+    "fullUrl": "urn:uuid:5fcff9db-16e4-3e56-aa78-abbc16338097",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "5fcff9db-16e4-3e56-aa78-abbc16338097",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 74
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "5fcff9db-16e4-3e56-aa78-abbc16338097"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "THE LOWELL GENERAL HOSPITAL",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9789376000"
+      } ],
+      "address": [ {
+        "line": [ "295 VARNUM AVE" ],
+        "city": "WESTFORD",
+        "state": "MA",
+        "postalCode": "018863513",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|5fcff9db-16e4-3e56-aa78-abbc16338097"
+    }
+  }, {
+    "fullUrl": "urn:uuid:2d8335a7-e37a-3004-9254-6f7de59ab66a",
+    "resource": {
+      "resourceType": "Location",
+      "id": "2d8335a7-e37a-3004-9254-6f7de59ab66a",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "2d8335a7-e37a-3004-9254-6f7de59ab66a"
+      } ],
+      "status": "active",
+      "name": "THE LOWELL GENERAL HOSPITAL",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9789376000"
+      } ],
+      "address": {
+        "line": [ "295 VARNUM AVE" ],
+        "city": "WESTFORD",
+        "state": "MA",
+        "postalCode": "018863513",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.4378411,
+        "latitude": 42.5792583
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "5fcff9db-16e4-3e56-aa78-abbc16338097"
+        },
+        "display": "THE LOWELL GENERAL HOSPITAL"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|2d8335a7-e37a-3004-9254-6f7de59ab66a"
+    }
+  }, {
+    "fullUrl": "urn:uuid:93c3d861-e05d-33b9-91eb-1768470229d7",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "93c3d861-e05d-33b9-91eb-1768470229d7",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 72
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 2962
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 1183
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 1398
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "93c3d861-e05d-33b9-91eb-1768470229d7"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "PAIN AND WELLNESS CENTER",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9788267230"
+      } ],
+      "address": [ {
+        "line": [ "10 CENTENNIAL DR" ],
+        "city": "PEABODY",
+        "state": "MA",
+        "postalCode": "019607938",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|93c3d861-e05d-33b9-91eb-1768470229d7"
+    }
+  }, {
+    "fullUrl": "urn:uuid:7d3a8231-d725-367e-b9ed-22c2e7791fb8",
+    "resource": {
+      "resourceType": "Location",
+      "id": "7d3a8231-d725-367e-b9ed-22c2e7791fb8",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "7d3a8231-d725-367e-b9ed-22c2e7791fb8"
+      } ],
+      "status": "active",
+      "name": "PAIN AND WELLNESS CENTER",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9788267230"
+      } ],
+      "address": {
+        "line": [ "10 CENTENNIAL DR" ],
+        "city": "PEABODY",
+        "state": "MA",
+        "postalCode": "019607938",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -70.9529896,
+        "latitude": 42.5261827
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "93c3d861-e05d-33b9-91eb-1768470229d7"
+        },
+        "display": "PAIN AND WELLNESS CENTER"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|7d3a8231-d725-367e-b9ed-22c2e7791fb8"
+    }
+  }, {
+    "fullUrl": "urn:uuid:609ec9f1-e806-3427-b912-9e3b2915521d",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "609ec9f1-e806-3427-b912-9e3b2915521d",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 9
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "609ec9f1-e806-3427-b912-9e3b2915521d"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "HOLYOKE VISITING NURSE ASSOC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "4135345691"
+      } ],
+      "address": [ {
+        "line": [ "575 BEECH STREET" ],
+        "city": "HOLYOKE",
+        "state": "MA",
+        "postalCode": "010406604",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|609ec9f1-e806-3427-b912-9e3b2915521d"
+    }
+  }, {
+    "fullUrl": "urn:uuid:523cbf36-2a49-37ea-b20e-4a708fcfc727",
+    "resource": {
+      "resourceType": "Location",
+      "id": "523cbf36-2a49-37ea-b20e-4a708fcfc727",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "523cbf36-2a49-37ea-b20e-4a708fcfc727"
+      } ],
+      "status": "active",
+      "name": "HOLYOKE VISITING NURSE ASSOC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "4135345691"
+      } ],
+      "address": {
+        "line": [ "575 BEECH STREET" ],
+        "city": "HOLYOKE",
+        "state": "MA",
+        "postalCode": "010406604",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -72.628169560868,
+        "latitude": 42.20105435
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "609ec9f1-e806-3427-b912-9e3b2915521d"
+        },
+        "display": "HOLYOKE VISITING NURSE ASSOC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|523cbf36-2a49-37ea-b20e-4a708fcfc727"
+    }
+  }, {
+    "fullUrl": "urn:uuid:a14e698d-a9ba-3eae-9c8b-682ec726433d",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "a14e698d-a9ba-3eae-9c8b-682ec726433d",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 2
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "a14e698d-a9ba-3eae-9c8b-682ec726433d"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "LYNN URGENT CARE LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178939901"
+      } ],
+      "address": [ {
+        "line": [ "776 WESTERN AVE" ],
+        "city": "LYNN",
+        "state": "MA",
+        "postalCode": "019052408",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|a14e698d-a9ba-3eae-9c8b-682ec726433d"
+    }
+  }, {
+    "fullUrl": "urn:uuid:ff8b4bf7-6d5b-3c61-ae06-d4dce23241ae",
+    "resource": {
+      "resourceType": "Location",
+      "id": "ff8b4bf7-6d5b-3c61-ae06-d4dce23241ae",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "ff8b4bf7-6d5b-3c61-ae06-d4dce23241ae"
+      } ],
+      "status": "active",
+      "name": "LYNN URGENT CARE LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178939901"
+      } ],
+      "address": {
+        "line": [ "776 WESTERN AVE" ],
+        "city": "LYNN",
+        "state": "MA",
+        "postalCode": "019052408",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -70.9494939,
+        "latitude": 42.466763
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "a14e698d-a9ba-3eae-9c8b-682ec726433d"
+        },
+        "display": "LYNN URGENT CARE LLC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|ff8b4bf7-6d5b-3c61-ae06-d4dce23241ae"
+    }
+  }, {
+    "fullUrl": "urn:uuid:0fedae9f-701f-3317-9b2f-69aea2202cdc",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "0fedae9f-701f-3317-9b2f-69aea2202cdc",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 102
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "0fedae9f-701f-3317-9b2f-69aea2202cdc"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "BOSTON MEDICAL CENTER CORPORATION-",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6176388000"
+      } ],
+      "address": [ {
+        "line": [ "88 EAST NEWTON STREET" ],
+        "city": "WINTHROP",
+        "state": "MA",
+        "postalCode": "021522715",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|0fedae9f-701f-3317-9b2f-69aea2202cdc"
+    }
+  }, {
+    "fullUrl": "urn:uuid:5d5ac7a4-7c31-3868-a7c1-d16c34243530",
+    "resource": {
+      "resourceType": "Location",
+      "id": "5d5ac7a4-7c31-3868-a7c1-d16c34243530",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "5d5ac7a4-7c31-3868-a7c1-d16c34243530"
+      } ],
+      "status": "active",
+      "name": "BOSTON MEDICAL CENTER CORPORATION-",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6176388000"
+      } ],
+      "address": {
+        "line": [ "88 EAST NEWTON STREET" ],
+        "city": "WINTHROP",
+        "state": "MA",
+        "postalCode": "021522715",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -70.982827,
+        "latitude": 42.3750976
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "0fedae9f-701f-3317-9b2f-69aea2202cdc"
+        },
+        "display": "BOSTON MEDICAL CENTER CORPORATION-"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|5d5ac7a4-7c31-3868-a7c1-d16c34243530"
+    }
+  }, {
+    "fullUrl": "urn:uuid:440fa4b8-c731-3cf5-81d9-aa3f30a37b95",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "440fa4b8-c731-3cf5-81d9-aa3f30a37b95",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 903
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/bed-count-extension",
+        "valueInteger": 327
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "440fa4b8-c731-3cf5-81d9-aa3f30a37b95"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "LAHEY HOSPITAL & MEDICAL CENTER, BURLINGTON",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7817445100"
+      } ],
+      "address": [ {
+        "line": [ "41 & 45 MALL ROAD" ],
+        "city": "PEABODY",
+        "state": "MA",
+        "postalCode": "019602901",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|440fa4b8-c731-3cf5-81d9-aa3f30a37b95"
+    }
+  }, {
+    "fullUrl": "urn:uuid:89c228b8-12e8-3436-9c1a-2bed9ee524d2",
+    "resource": {
+      "resourceType": "Location",
+      "id": "89c228b8-12e8-3436-9c1a-2bed9ee524d2",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "89c228b8-12e8-3436-9c1a-2bed9ee524d2"
+      } ],
+      "status": "active",
+      "name": "LAHEY HOSPITAL & MEDICAL CENTER, BURLINGTON",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7817445100"
+      } ],
+      "address": {
+        "line": [ "41 & 45 MALL ROAD" ],
+        "city": "PEABODY",
+        "state": "MA",
+        "postalCode": "019602901",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -70.9286609,
+        "latitude": 42.5278731
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "440fa4b8-c731-3cf5-81d9-aa3f30a37b95"
+        },
+        "display": "LAHEY HOSPITAL & MEDICAL CENTER, BURLINGTON"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|89c228b8-12e8-3436-9c1a-2bed9ee524d2"
+    }
+  }, {
+    "fullUrl": "urn:uuid:d4e48a16-0a60-3e90-81e5-c35b22ffe6af",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "d4e48a16-0a60-3e90-81e5-c35b22ffe6af",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 2
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "d4e48a16-0a60-3e90-81e5-c35b22ffe6af"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "GREEN MOUNTAIN URGENT CARE LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6035264635"
+      } ],
+      "address": [ {
+        "line": [ "856 STATE RD" ],
+        "city": "NORTH ADAMS",
+        "state": "MA",
+        "postalCode": "012473027",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|d4e48a16-0a60-3e90-81e5-c35b22ffe6af"
+    }
+  }, {
+    "fullUrl": "urn:uuid:61728ca7-d723-3602-a9b5-e6efddc42982",
+    "resource": {
+      "resourceType": "Location",
+      "id": "61728ca7-d723-3602-a9b5-e6efddc42982",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "61728ca7-d723-3602-a9b5-e6efddc42982"
+      } ],
+      "status": "active",
+      "name": "GREEN MOUNTAIN URGENT CARE LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6035264635"
+      } ],
+      "address": {
+        "line": [ "856 STATE RD" ],
+        "city": "NORTH ADAMS",
+        "state": "MA",
+        "postalCode": "012473027",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -73.16330754755236,
+        "latitude": 42.69967208677275
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "d4e48a16-0a60-3e90-81e5-c35b22ffe6af"
+        },
+        "display": "GREEN MOUNTAIN URGENT CARE LLC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|61728ca7-d723-3602-a9b5-e6efddc42982"
+    }
+  }, {
+    "fullUrl": "urn:uuid:0d24cc89-3256-330c-b36d-d8de8babef84",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "0d24cc89-3256-330c-b36d-d8de8babef84",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 69
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 3053
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 1964
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 456
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "0d24cc89-3256-330c-b36d-d8de8babef84"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "CAPE COD HEALTHCARE PHYSICIANS",
+      "telecom": [ {
+        "system": "phone",
+        "value": "5087784777"
+      } ],
+      "address": [ {
+        "line": [ "1030 FALMOUTH RD" ],
+        "city": "SOUTH YARMOUTH",
+        "state": "MA",
+        "postalCode": "026641218",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|0d24cc89-3256-330c-b36d-d8de8babef84"
+    }
+  }, {
+    "fullUrl": "urn:uuid:6e22abbe-b3a1-39a8-a429-9957b3244188",
+    "resource": {
+      "resourceType": "Location",
+      "id": "6e22abbe-b3a1-39a8-a429-9957b3244188",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "6e22abbe-b3a1-39a8-a429-9957b3244188"
+      } ],
+      "status": "active",
+      "name": "CAPE COD HEALTHCARE PHYSICIANS",
+      "telecom": [ {
+        "system": "phone",
+        "value": "5087784777"
+      } ],
+      "address": {
+        "line": [ "1030 FALMOUTH RD" ],
+        "city": "SOUTH YARMOUTH",
+        "state": "MA",
+        "postalCode": "026641218",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -70.1847414,
+        "latitude": 41.6667779
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "0d24cc89-3256-330c-b36d-d8de8babef84"
+        },
+        "display": "CAPE COD HEALTHCARE PHYSICIANS"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|6e22abbe-b3a1-39a8-a429-9957b3244188"
+    }
+  }, {
+    "fullUrl": "urn:uuid:db28cc9a-fdfb-35a6-aef7-ab9b933ef244",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "db28cc9a-fdfb-35a6-aef7-ab9b933ef244",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 11
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/bed-count-extension",
+        "valueInteger": 83
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "db28cc9a-fdfb-35a6-aef7-ab9b933ef244"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "CAMBRIDGE REHABILITATION & NURSING CENTER",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178644267"
+      } ],
+      "address": [ {
+        "line": [ "8 DANA STREET" ],
+        "city": "CAMBRIDGE",
+        "state": "MA",
+        "postalCode": "021385402",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|db28cc9a-fdfb-35a6-aef7-ab9b933ef244"
+    }
+  }, {
+    "fullUrl": "urn:uuid:9a277a7c-edef-39ed-a619-58dc818c416d",
+    "resource": {
+      "resourceType": "Location",
+      "id": "9a277a7c-edef-39ed-a619-58dc818c416d",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "9a277a7c-edef-39ed-a619-58dc818c416d"
+      } ],
+      "status": "active",
+      "name": "CAMBRIDGE REHABILITATION & NURSING CENTER",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178644267"
+      } ],
+      "address": {
+        "line": [ "8 DANA STREET" ],
+        "city": "CAMBRIDGE",
+        "state": "MA",
+        "postalCode": "021385402",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.11011030010101,
+        "latitude": 42.3694992
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "db28cc9a-fdfb-35a6-aef7-ab9b933ef244"
+        },
+        "display": "CAMBRIDGE REHABILITATION & NURSING CENTER"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|9a277a7c-edef-39ed-a619-58dc818c416d"
+    }
+  }, {
+    "fullUrl": "urn:uuid:be509ccb-bfb7-3b87-8945-8426b689ef9d",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "be509ccb-bfb7-3b87-8945-8426b689ef9d",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 10
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/bed-count-extension",
+        "valueInteger": 96
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "be509ccb-bfb7-3b87-8945-8426b689ef9d"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "BOSTON HOME, INC (THE)",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178253905"
+      } ],
+      "address": [ {
+        "line": [ "2049 DORCHESTER AVENUE" ],
+        "city": "BOSTON",
+        "state": "MA",
+        "postalCode": "021244742",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|be509ccb-bfb7-3b87-8945-8426b689ef9d"
+    }
+  }, {
+    "fullUrl": "urn:uuid:0b9636e4-045c-3489-9a61-53e087cda329",
+    "resource": {
+      "resourceType": "Location",
+      "id": "0b9636e4-045c-3489-9a61-53e087cda329",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "0b9636e4-045c-3489-9a61-53e087cda329"
+      } ],
+      "status": "active",
+      "name": "BOSTON HOME, INC (THE)",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178253905"
+      } ],
+      "address": {
+        "line": [ "2049 DORCHESTER AVENUE" ],
+        "city": "BOSTON",
+        "state": "MA",
+        "postalCode": "021244742",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.060511,
+        "latitude": 42.3554334
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "be509ccb-bfb7-3b87-8945-8426b689ef9d"
+        },
+        "display": "BOSTON HOME, INC (THE)"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|0b9636e4-045c-3489-9a61-53e087cda329"
+    }
+  }, {
+    "fullUrl": "urn:uuid:c0719377-d40a-3e9c-9f7c-af47c93b3f40",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "c0719377-d40a-3e9c-9f7c-af47c93b3f40",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 56
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 696
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 120
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 65
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "c0719377-d40a-3e9c-9f7c-af47c93b3f40"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "CARBON HEALTH PRIMARY CARE OF FLORIDA PA",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178652749"
+      } ],
+      "address": [ {
+        "line": [ "80 SUMMER ST STE 1" ],
+        "city": "BOSTON",
+        "state": "MA",
+        "postalCode": "021101218",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|c0719377-d40a-3e9c-9f7c-af47c93b3f40"
+    }
+  }, {
+    "fullUrl": "urn:uuid:551bb30f-ff5b-3c6e-98ed-938ef9775cdd",
+    "resource": {
+      "resourceType": "Location",
+      "id": "551bb30f-ff5b-3c6e-98ed-938ef9775cdd",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "551bb30f-ff5b-3c6e-98ed-938ef9775cdd"
+      } ],
+      "status": "active",
+      "name": "CARBON HEALTH PRIMARY CARE OF FLORIDA PA",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178652749"
+      } ],
+      "address": {
+        "line": [ "80 SUMMER ST STE 1" ],
+        "city": "BOSTON",
+        "state": "MA",
+        "postalCode": "021101218",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.05809515865283,
+        "latitude": 42.35403315
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "c0719377-d40a-3e9c-9f7c-af47c93b3f40"
+        },
+        "display": "CARBON HEALTH PRIMARY CARE OF FLORIDA PA"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|551bb30f-ff5b-3c6e-98ed-938ef9775cdd"
+    }
+  }, {
+    "fullUrl": "urn:uuid:70e3ad4f-b9ff-3f3e-9990-2cd7e23a9d1c",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "70e3ad4f-b9ff-3f3e-9990-2cd7e23a9d1c",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 2
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "70e3ad4f-b9ff-3f3e-9990-2cd7e23a9d1c"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "HEALTH-MD URGENT CARE",
+      "telecom": [ {
+        "system": "phone",
+        "value": "4135043507"
+      } ],
+      "address": [ {
+        "line": [ "1238 RIVERDALE ST" ],
+        "city": "WEST SPRINGFIELD",
+        "state": "MA",
+        "postalCode": "010894675",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|70e3ad4f-b9ff-3f3e-9990-2cd7e23a9d1c"
+    }
+  }, {
+    "fullUrl": "urn:uuid:c90eacba-39d3-3606-8652-32ab9c07e724",
+    "resource": {
+      "resourceType": "Location",
+      "id": "c90eacba-39d3-3606-8652-32ab9c07e724",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "c90eacba-39d3-3606-8652-32ab9c07e724"
+      } ],
+      "status": "active",
+      "name": "HEALTH-MD URGENT CARE",
+      "telecom": [ {
+        "system": "phone",
+        "value": "4135043507"
+      } ],
+      "address": {
+        "line": [ "1238 RIVERDALE ST" ],
+        "city": "WEST SPRINGFIELD",
+        "state": "MA",
+        "postalCode": "010894675",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -72.62624707492338,
+        "latitude": 42.1373438
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "70e3ad4f-b9ff-3f3e-9990-2cd7e23a9d1c"
+        },
+        "display": "HEALTH-MD URGENT CARE"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|c90eacba-39d3-3606-8652-32ab9c07e724"
+    }
+  }, {
+    "fullUrl": "urn:uuid:5a6fa8a5-90e2-3f70-bb3e-3d9dd7ad2f96",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "5a6fa8a5-90e2-3f70-bb3e-3d9dd7ad2f96",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 1
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "5a6fa8a5-90e2-3f70-bb3e-3d9dd7ad2f96"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "CHICOPEE REHABILITATION AND NURSING CENTER LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7189740266"
+      } ],
+      "address": [ {
+        "line": [ "44 NEW LOMBARD RD" ],
+        "city": "CHICOPEE",
+        "state": "MA",
+        "postalCode": "010204857",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|5a6fa8a5-90e2-3f70-bb3e-3d9dd7ad2f96"
+    }
+  }, {
+    "fullUrl": "urn:uuid:ccea3021-9716-3218-a8cb-7a701fe63b44",
+    "resource": {
+      "resourceType": "Location",
+      "id": "ccea3021-9716-3218-a8cb-7a701fe63b44",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "ccea3021-9716-3218-a8cb-7a701fe63b44"
+      } ],
+      "status": "active",
+      "name": "CHICOPEE REHABILITATION AND NURSING CENTER LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7189740266"
+      } ],
+      "address": {
+        "line": [ "44 NEW LOMBARD RD" ],
+        "city": "CHICOPEE",
+        "state": "MA",
+        "postalCode": "010204857",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -72.54203576723424,
+        "latitude": 42.1678446
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "5a6fa8a5-90e2-3f70-bb3e-3d9dd7ad2f96"
+        },
+        "display": "CHICOPEE REHABILITATION AND NURSING CENTER LLC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|ccea3021-9716-3218-a8cb-7a701fe63b44"
+    }
+  }, {
+    "fullUrl": "urn:uuid:06cc2462-430f-3322-9c87-7e971125f510",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "06cc2462-430f-3322-9c87-7e971125f510",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 680
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "06cc2462-430f-3322-9c87-7e971125f510"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "EMERSON HOSPITAL",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9782873226"
+      } ],
+      "address": [ {
+        "line": [ "133 OLD ROAD TO 9 ACRE COR" ],
+        "city": "WESTFORD",
+        "state": "MA",
+        "postalCode": "018863198",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|06cc2462-430f-3322-9c87-7e971125f510"
+    }
+  }, {
+    "fullUrl": "urn:uuid:ab557804-9cef-3574-92f3-faccf764e1c9",
+    "resource": {
+      "resourceType": "Location",
+      "id": "ab557804-9cef-3574-92f3-faccf764e1c9",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "ab557804-9cef-3574-92f3-faccf764e1c9"
+      } ],
+      "status": "active",
+      "name": "EMERSON HOSPITAL",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9782873226"
+      } ],
+      "address": {
+        "line": [ "133 OLD ROAD TO 9 ACRE COR" ],
+        "city": "WESTFORD",
+        "state": "MA",
+        "postalCode": "018863198",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.4378411,
+        "latitude": 42.5792583
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "06cc2462-430f-3322-9c87-7e971125f510"
+        },
+        "display": "EMERSON HOSPITAL"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|ab557804-9cef-3574-92f3-faccf764e1c9"
+    }
+  }, {
+    "fullUrl": "urn:uuid:a2d45ee8-b930-3169-b612-f602961ad212",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "a2d45ee8-b930-3169-b612-f602961ad212",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 31
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 260
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 32
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 18
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "a2d45ee8-b930-3169-b612-f602961ad212"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "SUNRISE HEALTHCARE LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6176509959"
+      } ],
+      "address": [ {
+        "line": [ "37 MINUTEMAN WAY" ],
+        "city": "SHREWSBURY",
+        "state": "MA",
+        "postalCode": "015452229",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|a2d45ee8-b930-3169-b612-f602961ad212"
+    }
+  }, {
+    "fullUrl": "urn:uuid:47a2789d-e285-3254-8365-34149cfbc8d1",
+    "resource": {
+      "resourceType": "Location",
+      "id": "47a2789d-e285-3254-8365-34149cfbc8d1",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "47a2789d-e285-3254-8365-34149cfbc8d1"
+      } ],
+      "status": "active",
+      "name": "SUNRISE HEALTHCARE LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6176509959"
+      } ],
+      "address": {
+        "line": [ "37 MINUTEMAN WAY" ],
+        "city": "SHREWSBURY",
+        "state": "MA",
+        "postalCode": "015452229",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.73443816915585,
+        "latitude": 42.288207
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "a2d45ee8-b930-3169-b612-f602961ad212"
+        },
+        "display": "SUNRISE HEALTHCARE LLC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|47a2789d-e285-3254-8365-34149cfbc8d1"
+    }
+  }, {
+    "fullUrl": "urn:uuid:f43f97f2-af04-3ed0-a42e-3681718cc9b2",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "f43f97f2-af04-3ed0-a42e-3681718cc9b2",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 8
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "f43f97f2-af04-3ed0-a42e-3681718cc9b2"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "BERKSHIRE MEDICAL CENTER INC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "4134472000"
+      } ],
+      "address": [ {
+        "line": [ "725 NORTH ST" ],
+        "city": "PITTSFIELD",
+        "state": "MA",
+        "postalCode": "012014109",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|f43f97f2-af04-3ed0-a42e-3681718cc9b2"
+    }
+  }, {
+    "fullUrl": "urn:uuid:1643c041-95c7-3639-932b-2e8ea85c7d82",
+    "resource": {
+      "resourceType": "Location",
+      "id": "1643c041-95c7-3639-932b-2e8ea85c7d82",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "1643c041-95c7-3639-932b-2e8ea85c7d82"
+      } ],
+      "status": "active",
+      "name": "BERKSHIRE MEDICAL CENTER INC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "4134472000"
+      } ],
+      "address": {
+        "line": [ "725 NORTH ST" ],
+        "city": "PITTSFIELD",
+        "state": "MA",
+        "postalCode": "012014109",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -73.2492795834909,
+        "latitude": 42.4600752
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "f43f97f2-af04-3ed0-a42e-3681718cc9b2"
+        },
+        "display": "BERKSHIRE MEDICAL CENTER INC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|1643c041-95c7-3639-932b-2e8ea85c7d82"
+    }
+  }, {
+    "fullUrl": "urn:uuid:f438b8e0-d856-328a-b193-2b014fc4cb97",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "f438b8e0-d856-328a-b193-2b014fc4cb97",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 4
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/bed-count-extension",
+        "valueInteger": 208
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "f438b8e0-d856-328a-b193-2b014fc4cb97"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "D'YOUVILLE SENIOR CARE",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9784545681"
+      } ],
+      "address": [ {
+        "line": [ "981 VARNUM AVENUE" ],
+        "city": "LOWELL",
+        "state": "MA",
+        "postalCode": "018541913",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|f438b8e0-d856-328a-b193-2b014fc4cb97"
+    }
+  }, {
+    "fullUrl": "urn:uuid:768666e6-7ff9-34cb-bb2c-e2e9da6bcfc2",
+    "resource": {
+      "resourceType": "Location",
+      "id": "768666e6-7ff9-34cb-bb2c-e2e9da6bcfc2",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "768666e6-7ff9-34cb-bb2c-e2e9da6bcfc2"
+      } ],
+      "status": "active",
+      "name": "D'YOUVILLE SENIOR CARE",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9784545681"
+      } ],
+      "address": {
+        "line": [ "981 VARNUM AVENUE" ],
+        "city": "LOWELL",
+        "state": "MA",
+        "postalCode": "018541913",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.36487149058269,
+        "latitude": 42.64591185
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "f438b8e0-d856-328a-b193-2b014fc4cb97"
+        },
+        "display": "D'YOUVILLE SENIOR CARE"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|768666e6-7ff9-34cb-bb2c-e2e9da6bcfc2"
+    }
+  }, {
+    "fullUrl": "urn:uuid:335fe080-43f9-3219-84bd-031c4fcfe9d5",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "335fe080-43f9-3219-84bd-031c4fcfe9d5",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 1
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "335fe080-43f9-3219-84bd-031c4fcfe9d5"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "PARK AVENUE SNF OPERATIONS LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7816489530"
+      } ],
+      "address": [ {
+        "line": [ "146 PARK AVE" ],
+        "city": "ARLINGTON",
+        "state": "MA",
+        "postalCode": "024765829",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|335fe080-43f9-3219-84bd-031c4fcfe9d5"
+    }
+  }, {
+    "fullUrl": "urn:uuid:e89159fd-3f0a-325f-9e0f-6b5b442395cf",
+    "resource": {
+      "resourceType": "Location",
+      "id": "e89159fd-3f0a-325f-9e0f-6b5b442395cf",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "e89159fd-3f0a-325f-9e0f-6b5b442395cf"
+      } ],
+      "status": "active",
+      "name": "PARK AVENUE SNF OPERATIONS LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7816489530"
+      } ],
+      "address": {
+        "line": [ "146 PARK AVE" ],
+        "city": "ARLINGTON",
+        "state": "MA",
+        "postalCode": "024765829",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.18224816367342,
+        "latitude": 42.421350950000004
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "335fe080-43f9-3219-84bd-031c4fcfe9d5"
+        },
+        "display": "PARK AVENUE SNF OPERATIONS LLC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|e89159fd-3f0a-325f-9e0f-6b5b442395cf"
+    }
+  }, {
+    "fullUrl": "urn:uuid:79d49935-bcc0-36ca-920b-45365c367438",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "79d49935-bcc0-36ca-920b-45365c367438",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 31
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 236
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 31
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 21
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "79d49935-bcc0-36ca-920b-45365c367438"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "SOUTH BOSTON COMMUNITY HEALTH CENTER INC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6172697500"
+      } ],
+      "address": [ {
+        "line": [ "409 W BROADWAY" ],
+        "city": "SOUTH BOSTON",
+        "state": "MA",
+        "postalCode": "021272245",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|79d49935-bcc0-36ca-920b-45365c367438"
+    }
+  }, {
+    "fullUrl": "urn:uuid:75a53ceb-dc3f-347d-8cfb-f2f5a42837d1",
+    "resource": {
+      "resourceType": "Location",
+      "id": "75a53ceb-dc3f-347d-8cfb-f2f5a42837d1",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "75a53ceb-dc3f-347d-8cfb-f2f5a42837d1"
+      } ],
+      "status": "active",
+      "name": "SOUTH BOSTON COMMUNITY HEALTH CENTER INC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6172697500"
+      } ],
+      "address": {
+        "line": [ "409 W BROADWAY" ],
+        "city": "SOUTH BOSTON",
+        "state": "MA",
+        "postalCode": "021272245",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.047958,
+        "latitude": 42.336831
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "79d49935-bcc0-36ca-920b-45365c367438"
+        },
+        "display": "SOUTH BOSTON COMMUNITY HEALTH CENTER INC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|75a53ceb-dc3f-347d-8cfb-f2f5a42837d1"
+    }
+  }, {
+    "fullUrl": "urn:uuid:497f39dd-280e-3d58-af5b-c5e3a3a09b10",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "497f39dd-280e-3d58-af5b-c5e3a3a09b10",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 435
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "497f39dd-280e-3d58-af5b-c5e3a3a09b10"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "CAPE COD HOSPITAL INC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "5087711800"
+      } ],
+      "address": [ {
+        "line": [ "27 PARK ST" ],
+        "city": "HYANNIS",
+        "state": "MA",
+        "postalCode": "026015230",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|497f39dd-280e-3d58-af5b-c5e3a3a09b10"
+    }
+  }, {
+    "fullUrl": "urn:uuid:92b97a14-2913-30e3-99ba-39c987e4a9f6",
+    "resource": {
+      "resourceType": "Location",
+      "id": "92b97a14-2913-30e3-99ba-39c987e4a9f6",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "92b97a14-2913-30e3-99ba-39c987e4a9f6"
+      } ],
+      "status": "active",
+      "name": "CAPE COD HOSPITAL INC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "5087711800"
+      } ],
+      "address": {
+        "line": [ "27 PARK ST" ],
+        "city": "HYANNIS",
+        "state": "MA",
+        "postalCode": "026015230",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -70.27352219234834,
+        "latitude": 41.65363635
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "497f39dd-280e-3d58-af5b-c5e3a3a09b10"
+        },
+        "display": "CAPE COD HOSPITAL INC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|92b97a14-2913-30e3-99ba-39c987e4a9f6"
+    }
+  }, {
+    "fullUrl": "urn:uuid:1ab2b5f9-cb95-3236-beec-9b9d4a407c61",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "1ab2b5f9-cb95-3236-beec-9b9d4a407c61",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 109
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "1ab2b5f9-cb95-3236-beec-9b9d4a407c61"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "BERKSHIRE MEDICAL CENTER INC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "4134472000"
+      } ],
+      "address": [ {
+        "line": [ "725 NORTH ST" ],
+        "city": "PITTSFIELD",
+        "state": "MA",
+        "postalCode": "012014109",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|1ab2b5f9-cb95-3236-beec-9b9d4a407c61"
+    }
+  }, {
+    "fullUrl": "urn:uuid:0c4ec7f1-f573-37e1-8c90-f1677e4750d2",
+    "resource": {
+      "resourceType": "Location",
+      "id": "0c4ec7f1-f573-37e1-8c90-f1677e4750d2",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "0c4ec7f1-f573-37e1-8c90-f1677e4750d2"
+      } ],
+      "status": "active",
+      "name": "BERKSHIRE MEDICAL CENTER INC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "4134472000"
+      } ],
+      "address": {
+        "line": [ "725 NORTH ST" ],
+        "city": "PITTSFIELD",
+        "state": "MA",
+        "postalCode": "012014109",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -73.2492795834909,
+        "latitude": 42.4600752
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "1ab2b5f9-cb95-3236-beec-9b9d4a407c61"
+        },
+        "display": "BERKSHIRE MEDICAL CENTER INC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|0c4ec7f1-f573-37e1-8c90-f1677e4750d2"
+    }
+  }, {
+    "fullUrl": "urn:uuid:0d1570ab-371c-3898-9397-95905d8c5166",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "0d1570ab-371c-3898-9397-95905d8c5166",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 154
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "0d1570ab-371c-3898-9397-95905d8c5166"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "TUFTS MEDICAL CENTER, INC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6176365442"
+      } ],
+      "address": [ {
+        "line": [ "750 WASHINGTON ST" ],
+        "city": "BOSTON",
+        "state": "MA",
+        "postalCode": "021111552",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|0d1570ab-371c-3898-9397-95905d8c5166"
+    }
+  }, {
+    "fullUrl": "urn:uuid:e1422937-ff27-34bf-81fe-7dc3fa012770",
+    "resource": {
+      "resourceType": "Location",
+      "id": "e1422937-ff27-34bf-81fe-7dc3fa012770",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "e1422937-ff27-34bf-81fe-7dc3fa012770"
+      } ],
+      "status": "active",
+      "name": "TUFTS MEDICAL CENTER, INC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6176365442"
+      } ],
+      "address": {
+        "line": [ "750 WASHINGTON ST" ],
+        "city": "BOSTON",
+        "state": "MA",
+        "postalCode": "021111552",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.0631836,
+        "latitude": 42.3499038
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "0d1570ab-371c-3898-9397-95905d8c5166"
+        },
+        "display": "TUFTS MEDICAL CENTER, INC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|e1422937-ff27-34bf-81fe-7dc3fa012770"
+    }
+  }, {
+    "fullUrl": "urn:uuid:2ca615f3-87f7-3283-a447-d919a883b676",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "2ca615f3-87f7-3283-a447-d919a883b676",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 3
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "2ca615f3-87f7-3283-a447-d919a883b676"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "HANOVER FAMILY HEALTH & URGENT CARE PC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7818290895"
+      } ],
+      "address": [ {
+        "line": [ "1399 WASHINGTON ST" ],
+        "city": "HANOVER",
+        "state": "MA",
+        "postalCode": "023391653",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|2ca615f3-87f7-3283-a447-d919a883b676"
+    }
+  }, {
+    "fullUrl": "urn:uuid:e27b66f2-8695-3f8f-9077-e5f4e0cc56c5",
+    "resource": {
+      "resourceType": "Location",
+      "id": "e27b66f2-8695-3f8f-9077-e5f4e0cc56c5",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "e27b66f2-8695-3f8f-9077-e5f4e0cc56c5"
+      } ],
+      "status": "active",
+      "name": "HANOVER FAMILY HEALTH & URGENT CARE PC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7818290895"
+      } ],
+      "address": {
+        "line": [ "1399 WASHINGTON ST" ],
+        "city": "HANOVER",
+        "state": "MA",
+        "postalCode": "023391653",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -70.8440854,
+        "latitude": 42.1441354
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "2ca615f3-87f7-3283-a447-d919a883b676"
+        },
+        "display": "HANOVER FAMILY HEALTH & URGENT CARE PC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|e27b66f2-8695-3f8f-9077-e5f4e0cc56c5"
+    }
+  }, {
+    "fullUrl": "urn:uuid:8ec2ca51-abb4-35dd-b90f-6c6aad6d2124",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "8ec2ca51-abb4-35dd-b90f-6c6aad6d2124",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 16
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/bed-count-extension",
+        "valueInteger": 135
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "8ec2ca51-abb4-35dd-b90f-6c6aad6d2124"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "ALLIANCE HEALTH AT ROSEWOOD",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9785358700"
+      } ],
+      "address": [ {
+        "line": [ "22 JOHNSON STREET" ],
+        "city": "PEABODY",
+        "state": "MA",
+        "postalCode": "019602311",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|8ec2ca51-abb4-35dd-b90f-6c6aad6d2124"
+    }
+  }, {
+    "fullUrl": "urn:uuid:4e165c5c-0402-33cb-8a45-2d8ce9c12fa8",
+    "resource": {
+      "resourceType": "Location",
+      "id": "4e165c5c-0402-33cb-8a45-2d8ce9c12fa8",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "4e165c5c-0402-33cb-8a45-2d8ce9c12fa8"
+      } ],
+      "status": "active",
+      "name": "ALLIANCE HEALTH AT ROSEWOOD",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9785358700"
+      } ],
+      "address": {
+        "line": [ "22 JOHNSON STREET" ],
+        "city": "PEABODY",
+        "state": "MA",
+        "postalCode": "019602311",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -70.99288129112277,
+        "latitude": 42.54644385
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "8ec2ca51-abb4-35dd-b90f-6c6aad6d2124"
+        },
+        "display": "ALLIANCE HEALTH AT ROSEWOOD"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|4e165c5c-0402-33cb-8a45-2d8ce9c12fa8"
+    }
+  }, {
+    "fullUrl": "urn:uuid:9fdce5d5-d4d0-3156-a8d5-8757bfe4e9b3",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "9fdce5d5-d4d0-3156-a8d5-8757bfe4e9b3",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 68
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 614
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 282
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 105
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "9fdce5d5-d4d0-3156-a8d5-8757bfe4e9b3"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "ONE CALL HEALTHCARE PLLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178660789"
+      } ],
+      "address": [ {
+        "line": [ "1 FARMER CIR" ],
+        "city": "ARLINGTON",
+        "state": "MA",
+        "postalCode": "024742866",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|9fdce5d5-d4d0-3156-a8d5-8757bfe4e9b3"
+    }
+  }, {
+    "fullUrl": "urn:uuid:f3f1618f-da04-3617-976f-68a8e0bd41b1",
+    "resource": {
+      "resourceType": "Location",
+      "id": "f3f1618f-da04-3617-976f-68a8e0bd41b1",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "f3f1618f-da04-3617-976f-68a8e0bd41b1"
+      } ],
+      "status": "active",
+      "name": "ONE CALL HEALTHCARE PLLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178660789"
+      } ],
+      "address": {
+        "line": [ "1 FARMER CIR" ],
+        "city": "ARLINGTON",
+        "state": "MA",
+        "postalCode": "024742866",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.16792616556859,
+        "latitude": 42.42405225
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "9fdce5d5-d4d0-3156-a8d5-8757bfe4e9b3"
+        },
+        "display": "ONE CALL HEALTHCARE PLLC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|f3f1618f-da04-3617-976f-68a8e0bd41b1"
+    }
+  }, {
+    "fullUrl": "urn:uuid:e5b9db6a-8dd8-3622-b9ce-3dc593e111d1",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "e5b9db6a-8dd8-3622-b9ce-3dc593e111d1",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 53
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 861
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 102
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 42
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "e5b9db6a-8dd8-3622-b9ce-3dc593e111d1"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "ENGRACE HEALTHCARE PRACTICE LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6177391122"
+      } ],
+      "address": [ {
+        "line": [ "1223 BEACON ST STE A" ],
+        "city": "BROOKLINE",
+        "state": "MA",
+        "postalCode": "024465332",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|e5b9db6a-8dd8-3622-b9ce-3dc593e111d1"
+    }
+  }, {
+    "fullUrl": "urn:uuid:68f95c8c-f686-3d3b-a438-7b0fb4aa7b30",
+    "resource": {
+      "resourceType": "Location",
+      "id": "68f95c8c-f686-3d3b-a438-7b0fb4aa7b30",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "68f95c8c-f686-3d3b-a438-7b0fb4aa7b30"
+      } ],
+      "status": "active",
+      "name": "ENGRACE HEALTHCARE PRACTICE LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6177391122"
+      } ],
+      "address": {
+        "line": [ "1223 BEACON ST STE A" ],
+        "city": "BROOKLINE",
+        "state": "MA",
+        "postalCode": "024465332",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.1170155,
+        "latitude": 42.3430087
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "e5b9db6a-8dd8-3622-b9ce-3dc593e111d1"
+        },
+        "display": "ENGRACE HEALTHCARE PRACTICE LLC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|68f95c8c-f686-3d3b-a438-7b0fb4aa7b30"
+    }
+  }, {
+    "fullUrl": "urn:uuid:aad05540-c9cb-3805-b3c4-f9b9d9b42b2e",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "aad05540-c9cb-3805-b3c4-f9b9d9b42b2e",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 46
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 327
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 81
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 39
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "aad05540-c9cb-3805-b3c4-f9b9d9b42b2e"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "RIVER'S EDGE PRIMARY CARE LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "4136956774"
+      } ],
+      "address": [ {
+        "line": [ "821 E MAIN ST STE 3" ],
+        "city": "CHICOPEE",
+        "state": "MA",
+        "postalCode": "010206306",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|aad05540-c9cb-3805-b3c4-f9b9d9b42b2e"
+    }
+  }, {
+    "fullUrl": "urn:uuid:a3d9fbb2-8e79-3105-8bf0-ccd519a97ca2",
+    "resource": {
+      "resourceType": "Location",
+      "id": "a3d9fbb2-8e79-3105-8bf0-ccd519a97ca2",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "a3d9fbb2-8e79-3105-8bf0-ccd519a97ca2"
+      } ],
+      "status": "active",
+      "name": "RIVER'S EDGE PRIMARY CARE LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "4136956774"
+      } ],
+      "address": {
+        "line": [ "821 E MAIN ST STE 3" ],
+        "city": "CHICOPEE",
+        "state": "MA",
+        "postalCode": "010206306",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -72.55672263289513,
+        "latitude": 42.155774795300516
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "aad05540-c9cb-3805-b3c4-f9b9d9b42b2e"
+        },
+        "display": "RIVER'S EDGE PRIMARY CARE LLC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|a3d9fbb2-8e79-3105-8bf0-ccd519a97ca2"
+    }
+  }, {
+    "fullUrl": "urn:uuid:1cec4304-9757-3a10-ad4f-7e2090c56131",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "1cec4304-9757-3a10-ad4f-7e2090c56131",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 52
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "1cec4304-9757-3a10-ad4f-7e2090c56131"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "UMASS MEMORIAL MEDICAL CENTER INC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "5083340254"
+      } ],
+      "address": [ {
+        "line": [ "55 LAKE AVE N" ],
+        "city": "WORCESTER",
+        "state": "MA",
+        "postalCode": "016550002",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|1cec4304-9757-3a10-ad4f-7e2090c56131"
+    }
+  }, {
+    "fullUrl": "urn:uuid:34d300db-86bd-3ca9-9a41-bf7ac5895e52",
+    "resource": {
+      "resourceType": "Location",
+      "id": "34d300db-86bd-3ca9-9a41-bf7ac5895e52",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "34d300db-86bd-3ca9-9a41-bf7ac5895e52"
+      } ],
+      "status": "active",
+      "name": "UMASS MEMORIAL MEDICAL CENTER INC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "5083340254"
+      } ],
+      "address": {
+        "line": [ "55 LAKE AVE N" ],
+        "city": "WORCESTER",
+        "state": "MA",
+        "postalCode": "016550002",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.76166994969458,
+        "latitude": 42.2774799
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "1cec4304-9757-3a10-ad4f-7e2090c56131"
+        },
+        "display": "UMASS MEMORIAL MEDICAL CENTER INC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|34d300db-86bd-3ca9-9a41-bf7ac5895e52"
+    }
+  }, {
+    "fullUrl": "urn:uuid:84d5768f-3a21-3da9-aad2-bbf7a3ae2700",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "84d5768f-3a21-3da9-aad2-bbf7a3ae2700",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 62
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 1782
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 682
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 755
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "84d5768f-3a21-3da9-aad2-bbf7a3ae2700"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "LOWELL FAMILY MEDICAL CARE PC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9784530550"
+      } ],
+      "address": [ {
+        "line": [ "817 MERRIMACK ST" ],
+        "city": "LOWELL",
+        "state": "MA",
+        "postalCode": "018543548",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|84d5768f-3a21-3da9-aad2-bbf7a3ae2700"
+    }
+  }, {
+    "fullUrl": "urn:uuid:4388e9fe-05d7-36cf-ae9b-f363dd88fb54",
+    "resource": {
+      "resourceType": "Location",
+      "id": "4388e9fe-05d7-36cf-ae9b-f363dd88fb54",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "4388e9fe-05d7-36cf-ae9b-f363dd88fb54"
+      } ],
+      "status": "active",
+      "name": "LOWELL FAMILY MEDICAL CARE PC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9784530550"
+      } ],
+      "address": {
+        "line": [ "817 MERRIMACK ST" ],
+        "city": "LOWELL",
+        "state": "MA",
+        "postalCode": "018543548",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.32263756223612,
+        "latitude": 42.650296999999995
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "84d5768f-3a21-3da9-aad2-bbf7a3ae2700"
+        },
+        "display": "LOWELL FAMILY MEDICAL CARE PC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|4388e9fe-05d7-36cf-ae9b-f363dd88fb54"
+    }
+  }, {
+    "fullUrl": "urn:uuid:9ce6072b-d039-3cde-8eaf-950211b8ae88",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "9ce6072b-d039-3cde-8eaf-950211b8ae88",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 81
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "9ce6072b-d039-3cde-8eaf-950211b8ae88"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "MIDDLETON FAMILY MEDICINE URGENT CARE, LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9787742555"
+      } ],
+      "address": [ {
+        "line": [ "147 S MAIN ST" ],
+        "city": "MIDDLETON",
+        "state": "MA",
+        "postalCode": "019492446",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|9ce6072b-d039-3cde-8eaf-950211b8ae88"
+    }
+  }, {
+    "fullUrl": "urn:uuid:340fb698-66ad-37b5-a6d7-12214e8b5287",
+    "resource": {
+      "resourceType": "Location",
+      "id": "340fb698-66ad-37b5-a6d7-12214e8b5287",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "340fb698-66ad-37b5-a6d7-12214e8b5287"
+      } ],
+      "status": "active",
+      "name": "MIDDLETON FAMILY MEDICINE URGENT CARE, LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9787742555"
+      } ],
+      "address": {
+        "line": [ "147 S MAIN ST" ],
+        "city": "MIDDLETON",
+        "state": "MA",
+        "postalCode": "019492446",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.00861442427218,
+        "latitude": 42.585787222720036
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "9ce6072b-d039-3cde-8eaf-950211b8ae88"
+        },
+        "display": "MIDDLETON FAMILY MEDICINE URGENT CARE, LLC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|340fb698-66ad-37b5-a6d7-12214e8b5287"
+    }
+  }, {
+    "fullUrl": "urn:uuid:058176fd-cbb0-328b-8411-c19f5045032d",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "058176fd-cbb0-328b-8411-c19f5045032d",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 5
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/bed-count-extension",
+        "valueInteger": 152
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "058176fd-cbb0-328b-8411-c19f5045032d"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "EXCEL CENTER FOR NURSING AND REHAB AT LEXINGTON",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7818618630"
+      } ],
+      "address": [ {
+        "line": [ "840 EMERSON GARDENS ROAD" ],
+        "city": "LEXINGTON",
+        "state": "MA",
+        "postalCode": "02420",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|058176fd-cbb0-328b-8411-c19f5045032d"
+    }
+  }, {
+    "fullUrl": "urn:uuid:28eb9d2d-78fe-3656-86a0-a991d7f7ed33",
+    "resource": {
+      "resourceType": "Location",
+      "id": "28eb9d2d-78fe-3656-86a0-a991d7f7ed33",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "28eb9d2d-78fe-3656-86a0-a991d7f7ed33"
+      } ],
+      "status": "active",
+      "name": "EXCEL CENTER FOR NURSING AND REHAB AT LEXINGTON",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7818618630"
+      } ],
+      "address": {
+        "line": [ "840 EMERSON GARDENS ROAD" ],
+        "city": "LEXINGTON",
+        "state": "MA",
+        "postalCode": "02420",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.19888753880475,
+        "latitude": 42.43761961817366
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "058176fd-cbb0-328b-8411-c19f5045032d"
+        },
+        "display": "EXCEL CENTER FOR NURSING AND REHAB AT LEXINGTON"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|28eb9d2d-78fe-3656-86a0-a991d7f7ed33"
+    }
+  }, {
+    "fullUrl": "urn:uuid:a036cdf2-bbc5-3ffd-987f-56e437fd8b74",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "a036cdf2-bbc5-3ffd-987f-56e437fd8b74",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 43
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/bed-count-extension",
+        "valueInteger": 120
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "a036cdf2-bbc5-3ffd-987f-56e437fd8b74"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "WINDSOR NURSING & RETIREMENT HOME",
+      "telecom": [ {
+        "system": "phone",
+        "value": "5083943514"
+      } ],
+      "address": [ {
+        "line": [ "265 N MAIN ST" ],
+        "city": "SOUTH YARMOUTH",
+        "state": "MA",
+        "postalCode": "026642083",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|a036cdf2-bbc5-3ffd-987f-56e437fd8b74"
+    }
+  }, {
+    "fullUrl": "urn:uuid:1a3e0e85-0de4-360b-981c-53434f0c0a0e",
+    "resource": {
+      "resourceType": "Location",
+      "id": "1a3e0e85-0de4-360b-981c-53434f0c0a0e",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "1a3e0e85-0de4-360b-981c-53434f0c0a0e"
+      } ],
+      "status": "active",
+      "name": "WINDSOR NURSING & RETIREMENT HOME",
+      "telecom": [ {
+        "system": "phone",
+        "value": "5083943514"
+      } ],
+      "address": {
+        "line": [ "265 N MAIN ST" ],
+        "city": "SOUTH YARMOUTH",
+        "state": "MA",
+        "postalCode": "026642083",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -70.18292625685085,
+        "latitude": 41.680980000000005
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "a036cdf2-bbc5-3ffd-987f-56e437fd8b74"
+        },
+        "display": "WINDSOR NURSING & RETIREMENT HOME"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|1a3e0e85-0de4-360b-981c-53434f0c0a0e"
+    }
+  }, {
+    "fullUrl": "urn:uuid:4f5e8f16-a31b-3071-8556-d7188ede313d",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "4f5e8f16-a31b-3071-8556-d7188ede313d",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 47
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "4f5e8f16-a31b-3071-8556-d7188ede313d"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "HOLYOKE MEDICAL CENTER INC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "4135342805"
+      } ],
+      "address": [ {
+        "line": [ "575 BEECH ST" ],
+        "city": "HOLYOKE",
+        "state": "MA",
+        "postalCode": "010402223",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|4f5e8f16-a31b-3071-8556-d7188ede313d"
+    }
+  }, {
+    "fullUrl": "urn:uuid:d261e902-ea03-3f5f-8869-4a647b897d89",
+    "resource": {
+      "resourceType": "Location",
+      "id": "d261e902-ea03-3f5f-8869-4a647b897d89",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "d261e902-ea03-3f5f-8869-4a647b897d89"
+      } ],
+      "status": "active",
+      "name": "HOLYOKE MEDICAL CENTER INC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "4135342805"
+      } ],
+      "address": {
+        "line": [ "575 BEECH ST" ],
+        "city": "HOLYOKE",
+        "state": "MA",
+        "postalCode": "010402223",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -72.628169560868,
+        "latitude": 42.20105435
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "4f5e8f16-a31b-3071-8556-d7188ede313d"
+        },
+        "display": "HOLYOKE MEDICAL CENTER INC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|d261e902-ea03-3f5f-8869-4a647b897d89"
+    }
+  }, {
+    "fullUrl": "urn:uuid:a25107f7-f4f5-36fc-98e4-f3e1b5875c91",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "a25107f7-f4f5-36fc-98e4-f3e1b5875c91",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 1
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "a25107f7-f4f5-36fc-98e4-f3e1b5875c91"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "MASS GENERAL BRIGHAM URGENT CARE LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6177516205"
+      } ],
+      "address": [ {
+        "line": [ "1285 BEACON ST" ],
+        "city": "WOBURN",
+        "state": "MA",
+        "postalCode": "018012157",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|a25107f7-f4f5-36fc-98e4-f3e1b5875c91"
+    }
+  }, {
+    "fullUrl": "urn:uuid:cf117c25-4eca-3432-af54-bf059141b5ea",
+    "resource": {
+      "resourceType": "Location",
+      "id": "cf117c25-4eca-3432-af54-bf059141b5ea",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "cf117c25-4eca-3432-af54-bf059141b5ea"
+      } ],
+      "status": "active",
+      "name": "MASS GENERAL BRIGHAM URGENT CARE LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6177516205"
+      } ],
+      "address": {
+        "line": [ "1285 BEACON ST" ],
+        "city": "WOBURN",
+        "state": "MA",
+        "postalCode": "018012157",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.1684508,
+        "latitude": 42.4979478
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "a25107f7-f4f5-36fc-98e4-f3e1b5875c91"
+        },
+        "display": "MASS GENERAL BRIGHAM URGENT CARE LLC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|cf117c25-4eca-3432-af54-bf059141b5ea"
+    }
+  }, {
+    "fullUrl": "urn:uuid:83769f98-fff3-3535-8781-6ace5957136f",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "83769f98-fff3-3535-8781-6ace5957136f",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 7
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/bed-count-extension",
+        "valueInteger": 96
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "83769f98-fff3-3535-8781-6ace5957136f"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "SOUTHSHORE HEALTH CARE CENTER",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7818783308"
+      } ],
+      "address": [ {
+        "line": [ "115 NORTH AVENUE" ],
+        "city": "ROCKLAND",
+        "state": "MA",
+        "postalCode": "023702129",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|83769f98-fff3-3535-8781-6ace5957136f"
+    }
+  }, {
+    "fullUrl": "urn:uuid:1aec578b-2818-3402-8af2-109f871d854a",
+    "resource": {
+      "resourceType": "Location",
+      "id": "1aec578b-2818-3402-8af2-109f871d854a",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "1aec578b-2818-3402-8af2-109f871d854a"
+      } ],
+      "status": "active",
+      "name": "SOUTHSHORE HEALTH CARE CENTER",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7818783308"
+      } ],
+      "address": {
+        "line": [ "115 NORTH AVENUE" ],
+        "city": "ROCKLAND",
+        "state": "MA",
+        "postalCode": "023702129",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -70.92237824494691,
+        "latitude": 42.13496385
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "83769f98-fff3-3535-8781-6ace5957136f"
+        },
+        "display": "SOUTHSHORE HEALTH CARE CENTER"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|1aec578b-2818-3402-8af2-109f871d854a"
+    }
+  }, {
+    "fullUrl": "urn:uuid:217cb6f6-e822-3831-9d9d-ffa104971042",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "217cb6f6-e822-3831-9d9d-ffa104971042",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 63
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "217cb6f6-e822-3831-9d9d-ffa104971042"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "ENCOMPASS HEALTH REHABILITATION HOSP OF NEW ENGLAN",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7819355050"
+      } ],
+      "address": [ {
+        "line": [ "2 REHABILITATION WAY" ],
+        "city": "WOBURN",
+        "state": "MA",
+        "postalCode": "018016003",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|217cb6f6-e822-3831-9d9d-ffa104971042"
+    }
+  }, {
+    "fullUrl": "urn:uuid:ea493903-a9cf-337a-972e-d216c2bf21fa",
+    "resource": {
+      "resourceType": "Location",
+      "id": "ea493903-a9cf-337a-972e-d216c2bf21fa",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "ea493903-a9cf-337a-972e-d216c2bf21fa"
+      } ],
+      "status": "active",
+      "name": "ENCOMPASS HEALTH REHABILITATION HOSP OF NEW ENGLAN",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7819355050"
+      } ],
+      "address": {
+        "line": [ "2 REHABILITATION WAY" ],
+        "city": "WOBURN",
+        "state": "MA",
+        "postalCode": "018016003",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.161925472006,
+        "latitude": 42.46352265
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "217cb6f6-e822-3831-9d9d-ffa104971042"
+        },
+        "display": "ENCOMPASS HEALTH REHABILITATION HOSP OF NEW ENGLAN"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|ea493903-a9cf-337a-972e-d216c2bf21fa"
+    }
+  }, {
+    "fullUrl": "urn:uuid:65dac97b-bb0c-38ae-94bc-bf29ac9687ea",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "65dac97b-bb0c-38ae-94bc-bf29ac9687ea",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 9
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/bed-count-extension",
+        "valueInteger": 89
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "65dac97b-bb0c-38ae-94bc-bf29ac9687ea"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "CRANEVILLE PLACE REHABILITATION & SKILLED  CARE CT",
+      "telecom": [ {
+        "system": "phone",
+        "value": "4136843212"
+      } ],
+      "address": [ {
+        "line": [ "265 MAIN STREET" ],
+        "city": "DALTON",
+        "state": "MA",
+        "postalCode": "012261614",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|65dac97b-bb0c-38ae-94bc-bf29ac9687ea"
+    }
+  }, {
+    "fullUrl": "urn:uuid:0e7ef1bc-f665-333b-9ca3-8c058b6091f1",
+    "resource": {
+      "resourceType": "Location",
+      "id": "0e7ef1bc-f665-333b-9ca3-8c058b6091f1",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "0e7ef1bc-f665-333b-9ca3-8c058b6091f1"
+      } ],
+      "status": "active",
+      "name": "CRANEVILLE PLACE REHABILITATION & SKILLED  CARE CT",
+      "telecom": [ {
+        "system": "phone",
+        "value": "4136843212"
+      } ],
+      "address": {
+        "line": [ "265 MAIN STREET" ],
+        "city": "DALTON",
+        "state": "MA",
+        "postalCode": "012261614",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -73.17745071097283,
+        "latitude": 42.472932099999994
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "65dac97b-bb0c-38ae-94bc-bf29ac9687ea"
+        },
+        "display": "CRANEVILLE PLACE REHABILITATION & SKILLED  CARE CT"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|0e7ef1bc-f665-333b-9ca3-8c058b6091f1"
+    }
+  }, {
+    "fullUrl": "urn:uuid:b954c464-11ea-312b-a3f8-1350775bfa54",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "b954c464-11ea-312b-a3f8-1350775bfa54",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 4
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "b954c464-11ea-312b-a3f8-1350775bfa54"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "CHELSEA JEWISH HOSPICE AND PALLIATIVE CARE",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178890779"
+      } ],
+      "address": [ {
+        "line": [ "123 CAPTAIN'S ROW" ],
+        "city": "CHELSEA",
+        "state": "MA",
+        "postalCode": "021504019",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|b954c464-11ea-312b-a3f8-1350775bfa54"
+    }
+  }, {
+    "fullUrl": "urn:uuid:9e3707cb-817a-33e5-86ff-f3e74bcd6b4f",
+    "resource": {
+      "resourceType": "Location",
+      "id": "9e3707cb-817a-33e5-86ff-f3e74bcd6b4f",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "9e3707cb-817a-33e5-86ff-f3e74bcd6b4f"
+      } ],
+      "status": "active",
+      "name": "CHELSEA JEWISH HOSPICE AND PALLIATIVE CARE",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178890779"
+      } ],
+      "address": {
+        "line": [ "123 CAPTAIN'S ROW" ],
+        "city": "CHELSEA",
+        "state": "MA",
+        "postalCode": "021504019",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.0328284,
+        "latitude": 42.3917638
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "b954c464-11ea-312b-a3f8-1350775bfa54"
+        },
+        "display": "CHELSEA JEWISH HOSPICE AND PALLIATIVE CARE"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|9e3707cb-817a-33e5-86ff-f3e74bcd6b4f"
+    }
+  }, {
+    "fullUrl": "urn:uuid:91808f17-7583-32a3-aa55-23b131b327c7",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "91808f17-7583-32a3-aa55-23b131b327c7",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 44
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 324
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 83
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 38
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "91808f17-7583-32a3-aa55-23b131b327c7"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "SOUTH SHORE CENTER FOR WELLNESS LTD",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7818788340"
+      } ],
+      "address": [ {
+        "line": [ "200 CORDWAINER DR" ],
+        "city": "NORWELL",
+        "state": "MA",
+        "postalCode": "020611671",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|91808f17-7583-32a3-aa55-23b131b327c7"
+    }
+  }, {
+    "fullUrl": "urn:uuid:cb10fc5f-9370-332c-8653-a69c8f5e815d",
+    "resource": {
+      "resourceType": "Location",
+      "id": "cb10fc5f-9370-332c-8653-a69c8f5e815d",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "cb10fc5f-9370-332c-8653-a69c8f5e815d"
+      } ],
+      "status": "active",
+      "name": "SOUTH SHORE CENTER FOR WELLNESS LTD",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7818788340"
+      } ],
+      "address": {
+        "line": [ "200 CORDWAINER DR" ],
+        "city": "NORWELL",
+        "state": "MA",
+        "postalCode": "020611671",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -70.8846291501739,
+        "latitude": 42.16352995
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "91808f17-7583-32a3-aa55-23b131b327c7"
+        },
+        "display": "SOUTH SHORE CENTER FOR WELLNESS LTD"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|cb10fc5f-9370-332c-8653-a69c8f5e815d"
+    }
+  }, {
+    "fullUrl": "urn:uuid:c05d73d0-b348-32ce-9fe5-13a720950f37",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "c05d73d0-b348-32ce-9fe5-13a720950f37",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 10
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "c05d73d0-b348-32ce-9fe5-13a720950f37"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "URGENT HELP CHELMSFORD PC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9784467515"
+      } ],
+      "address": [ {
+        "line": [ "45 DRUM HILL RD" ],
+        "city": "CHELMSFORD",
+        "state": "MA",
+        "postalCode": "018241503",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|c05d73d0-b348-32ce-9fe5-13a720950f37"
+    }
+  }, {
+    "fullUrl": "urn:uuid:f3a27424-c1f9-344d-a732-ded5d43323ed",
+    "resource": {
+      "resourceType": "Location",
+      "id": "f3a27424-c1f9-344d-a732-ded5d43323ed",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "f3a27424-c1f9-344d-a732-ded5d43323ed"
+      } ],
+      "status": "active",
+      "name": "URGENT HELP CHELMSFORD PC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "9784467515"
+      } ],
+      "address": {
+        "line": [ "45 DRUM HILL RD" ],
+        "city": "CHELMSFORD",
+        "state": "MA",
+        "postalCode": "018241503",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.3615131,
+        "latitude": 42.6255635
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "c05d73d0-b348-32ce-9fe5-13a720950f37"
+        },
+        "display": "URGENT HELP CHELMSFORD PC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|f3a27424-c1f9-344d-a732-ded5d43323ed"
+    }
+  }, {
+    "fullUrl": "urn:uuid:0592d4e5-a0fb-3143-83cd-8e5a6b066a96",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "0592d4e5-a0fb-3143-83cd-8e5a6b066a96",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 133
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "0592d4e5-a0fb-3143-83cd-8e5a6b066a96"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "SOUTH SHORE PRIMARY AND URGENT CARE LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7815610460"
+      } ],
+      "address": [ {
+        "line": [ "20 EAST ST" ],
+        "city": "HANOVER",
+        "state": "MA",
+        "postalCode": "023391638",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|0592d4e5-a0fb-3143-83cd-8e5a6b066a96"
+    }
+  }, {
+    "fullUrl": "urn:uuid:babb5508-b5dd-3973-8aca-e80876d2ab06",
+    "resource": {
+      "resourceType": "Location",
+      "id": "babb5508-b5dd-3973-8aca-e80876d2ab06",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "babb5508-b5dd-3973-8aca-e80876d2ab06"
+      } ],
+      "status": "active",
+      "name": "SOUTH SHORE PRIMARY AND URGENT CARE LLC",
+      "telecom": [ {
+        "system": "phone",
+        "value": "7815610460"
+      } ],
+      "address": {
+        "line": [ "20 EAST ST" ],
+        "city": "HANOVER",
+        "state": "MA",
+        "postalCode": "023391638",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -70.82664947485381,
+        "latitude": 42.1278249
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "0592d4e5-a0fb-3143-83cd-8e5a6b066a96"
+        },
+        "display": "SOUTH SHORE PRIMARY AND URGENT CARE LLC"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|babb5508-b5dd-3973-8aca-e80876d2ab06"
+    }
+  }, {
+    "fullUrl": "urn:uuid:ba07b31b-bf14-39b8-be95-4c5ca5062daa",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "ba07b31b-bf14-39b8-be95-4c5ca5062daa",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 171
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "ba07b31b-bf14-39b8-be95-4c5ca5062daa"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "SPAULDING HOSPITAL FOR CONTINUING MED CARE-CAMB",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178764344"
+      } ],
+      "address": [ {
+        "line": [ "1575 CAMBRIDGE ST" ],
+        "city": "CAMBRIDGE",
+        "state": "MA",
+        "postalCode": "021384308",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|ba07b31b-bf14-39b8-be95-4c5ca5062daa"
+    }
+  }, {
+    "fullUrl": "urn:uuid:d6dee237-1869-3f35-9bc5-45ed01391c83",
+    "resource": {
+      "resourceType": "Location",
+      "id": "d6dee237-1869-3f35-9bc5-45ed01391c83",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "d6dee237-1869-3f35-9bc5-45ed01391c83"
+      } ],
+      "status": "active",
+      "name": "SPAULDING HOSPITAL FOR CONTINUING MED CARE-CAMB",
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178764344"
+      } ],
+      "address": {
+        "line": [ "1575 CAMBRIDGE ST" ],
+        "city": "CAMBRIDGE",
+        "state": "MA",
+        "postalCode": "021384308",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -71.10711344152975,
+        "latitude": 42.375209549999994
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "ba07b31b-bf14-39b8-be95-4c5ca5062daa"
+        },
+        "display": "SPAULDING HOSPITAL FOR CONTINUING MED CARE-CAMB"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|d6dee237-1869-3f35-9bc5-45ed01391c83"
+    }
+  }, {
+    "fullUrl": "urn:uuid:6aae7a31-90df-3455-ad8d-81f8cf2d21e8",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "6aae7a31-90df-3455-ad8d-81f8cf2d21e8",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 46
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+        "valueInteger": 0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+        "valueInteger": 0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "6aae7a31-90df-3455-ad8d-81f8cf2d21e8"
+      } ],
+      "active": true,
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        } ],
+        "text": "Healthcare Provider"
+      } ],
+      "name": "BROCKTON HOSPITAL, INC.",
+      "telecom": [ {
+        "system": "phone",
+        "value": "5089417000"
+      } ],
+      "address": [ {
+        "line": [ "680 CENTRE ST" ],
+        "city": "BROCKTON",
+        "state": "MA",
+        "postalCode": "023023308",
+        "country": "US"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|6aae7a31-90df-3455-ad8d-81f8cf2d21e8"
+    }
+  }, {
+    "fullUrl": "urn:uuid:ab1eb2eb-5fe2-39b8-9c17-4f2131691379",
+    "resource": {
+      "resourceType": "Location",
+      "id": "ab1eb2eb-5fe2-39b8-9c17-4f2131691379",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" ]
+      },
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "ab1eb2eb-5fe2-39b8-9c17-4f2131691379"
+      } ],
+      "status": "active",
+      "name": "BROCKTON HOSPITAL, INC.",
+      "telecom": [ {
+        "system": "phone",
+        "value": "5089417000"
+      } ],
+      "address": {
+        "line": [ "680 CENTRE ST" ],
+        "city": "BROCKTON",
+        "state": "MA",
+        "postalCode": "023023308",
+        "country": "US"
+      },
+      "position": {
+        "longitude": -70.9910738855076,
+        "latitude": 42.0872752
+      },
+      "managingOrganization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "6aae7a31-90df-3455-ad8d-81f8cf2d21e8"
+        },
+        "display": "BROCKTON HOSPITAL, INC."
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|ab1eb2eb-5fe2-39b8-9c17-4f2131691379"
+    }
+  }, {
+    "fullUrl": "urn:uuid:bb1ad573-19b8-9cd8-68fb-0e6f684df992",
+    "resource": {
+      "resourceType": "Location",
+      "id": "bb1ad573-19b8-9cd8-68fb-0e6f684df992",
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "bb1ad573-19b8-9cd8-68fb-0e6f684df992"
+      } ],
+      "status": "active",
+      "description": "Patient's Home",
+      "mode": "kind",
+      "physicalType": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+          "code": "ho",
+          "display": "House"
+        } ]
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location",
+      "ifNoneExist": "identifier=https://github.com/synthetichealth/synthea|bb1ad573-19b8-9cd8-68fb-0e6f684df992"
+    }
+  } ]
+}

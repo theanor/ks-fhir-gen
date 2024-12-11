@@ -1,0 +1,5034 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [ {
+    "fullUrl": "urn:uuid:0aaa9313-85b0-33c3-98dd-c5ce0b314976",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "0aaa9313-85b0-33c3-98dd-c5ce0b314976",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 8
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999984591"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Reilly981",
+        "given": [ "Gabriel934" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Gabriel934.Reilly981@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "881 Main Street" ],
+        "city": "Fitchburg",
+        "state": "MA",
+        "postalCode": "01420",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999984591"
+    }
+  }, {
+    "fullUrl": "urn:uuid:c4e0994a-5c9c-3188-9938-413901634e55",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "c4e0994a-5c9c-3188-9938-413901634e55",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999984591"
+        },
+        "display": "Dr. Gabriel934 Reilly981"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "74ab949d-17ac-3309-83a0-13b4405c66aa"
+        },
+        "display": "Fitchburg Outpatient Clinic"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "81c75a54-2b95-3fdf-9327-b74df8630869"
+        },
+        "display": "Fitchburg Outpatient Clinic"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "978-342-9781 Or 978-342-9781"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Gabriel934.Reilly981@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:562fcb46-8bc2-3e02-94d3-6163fd85f79d",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "562fcb46-8bc2-3e02-94d3-6163fd85f79d",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 5
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999928192"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Ward668",
+        "given": [ "Lindsay928" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Lindsay928.Ward668@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "512 MAIN STREET, SUITE 211" ],
+        "city": "SHREWSBURY",
+        "state": "MA",
+        "postalCode": "015456406",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999928192"
+    }
+  }, {
+    "fullUrl": "urn:uuid:fc701e37-b996-4358-3161-6555dcc8a407",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "fc701e37-b996-4358-3161-6555dcc8a407",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999928192"
+        },
+        "display": "Dr. Lindsay928 Ward668"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "17a4bae5-8b64-34d7-8144-b428be027bd0"
+        },
+        "display": "NURSE ON CALL"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "07aec8d6-287d-30ac-81a8-752782163466"
+        },
+        "display": "NURSE ON CALL"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "5088451232"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Lindsay928.Ward668@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:3ed6895f-efb4-3825-b130-e6435e1d8677",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "3ed6895f-efb4-3825-b130-e6435e1d8677",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 2
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999893099"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Farrell962",
+        "given": [ "Cherrie404" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Cherrie404.Farrell962@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "476 VARNUM AVE" ],
+        "city": "LOWELL",
+        "state": "MA",
+        "postalCode": "018542122",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999893099"
+    }
+  }, {
+    "fullUrl": "urn:uuid:eb31be8e-f203-4e49-1895-1baa3d49876d",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "eb31be8e-f203-4e49-1895-1baa3d49876d",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999893099"
+        },
+        "display": "Dr. Cherrie404 Farrell962"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "ae88fd02-4911-3625-9e97-85b626ed3b0b"
+        },
+        "display": "FAIRHAVEN HEALTHCARE CENTER INC."
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "1cec266a-be2a-3ece-87ba-324a72d79e6f"
+        },
+        "display": "FAIRHAVEN HEALTHCARE CENTER INC."
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "9784583388"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Cherrie404.Farrell962@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:1589292b-6ecd-31e6-bbd3-716549f87929",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "1589292b-6ecd-31e6-bbd3-716549f87929",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 57
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999945097"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Champlin946",
+        "given": [ "Tracey100" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Tracey100.Champlin946@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "20 ELM ST" ],
+        "city": "PITTSFIELD",
+        "state": "MA",
+        "postalCode": "012016502",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999945097"
+    }
+  }, {
+    "fullUrl": "urn:uuid:5ee7d841-cdee-b5bc-e81d-0671245c23ad",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "5ee7d841-cdee-b5bc-e81d-0671245c23ad",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999945097"
+        },
+        "display": "Dr. Tracey100 Champlin946"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "4cf79e95-2815-3a4c-a3b8-951fe548dd27"
+        },
+        "display": "BERKSHIRE FAMILY PRACTICE ASSOCIATES PC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "79eb760e-d3a4-3d2e-b487-bc46f62af19d"
+        },
+        "display": "BERKSHIRE FAMILY PRACTICE ASSOCIATES PC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "4134453131"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Tracey100.Champlin946@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:f1f54850-a784-32c7-8397-9fd91ca75b59",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "f1f54850-a784-32c7-8397-9fd91ca75b59",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 74
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999994798"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Schamberger479",
+        "given": [ "Margene509" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Margene509.Schamberger479@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "295 VARNUM AVE" ],
+        "city": "WESTFORD",
+        "state": "MA",
+        "postalCode": "018863513",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999994798"
+    }
+  }, {
+    "fullUrl": "urn:uuid:859cdcc7-75a5-b3e3-948e-386263737f98",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "859cdcc7-75a5-b3e3-948e-386263737f98",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999994798"
+        },
+        "display": "Dr. Margene509 Schamberger479"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "5fcff9db-16e4-3e56-aa78-abbc16338097"
+        },
+        "display": "THE LOWELL GENERAL HOSPITAL"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "2d8335a7-e37a-3004-9254-6f7de59ab66a"
+        },
+        "display": "THE LOWELL GENERAL HOSPITAL"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "9789376000"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Margene509.Schamberger479@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:8309bf7f-9fc0-39fe-ba40-2b979b04b5a6",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "8309bf7f-9fc0-39fe-ba40-2b979b04b5a6",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 72
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999969493"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Thiel172",
+        "given": [ "Garret233" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Garret233.Thiel172@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "10 CENTENNIAL DR" ],
+        "city": "PEABODY",
+        "state": "MA",
+        "postalCode": "019607938",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999969493"
+    }
+  }, {
+    "fullUrl": "urn:uuid:86c36a4c-016f-ba1e-ac9f-8d0a47bc595e",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "86c36a4c-016f-ba1e-ac9f-8d0a47bc595e",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999969493"
+        },
+        "display": "Dr. Garret233 Thiel172"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "93c3d861-e05d-33b9-91eb-1768470229d7"
+        },
+        "display": "PAIN AND WELLNESS CENTER"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "7d3a8231-d725-367e-b9ed-22c2e7791fb8"
+        },
+        "display": "PAIN AND WELLNESS CENTER"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "9788267230"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Garret233.Thiel172@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:eac4072f-c9e9-303c-9cf1-ac7d14c03d3f",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "eac4072f-c9e9-303c-9cf1-ac7d14c03d3f",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 9
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999933390"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Conn188",
+        "given": [ "Cherrie404" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Cherrie404.Conn188@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "575 BEECH STREET" ],
+        "city": "HOLYOKE",
+        "state": "MA",
+        "postalCode": "010406604",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999933390"
+    }
+  }, {
+    "fullUrl": "urn:uuid:b0c50af4-f247-9fc3-1b8f-df98be38d70d",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "b0c50af4-f247-9fc3-1b8f-df98be38d70d",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999933390"
+        },
+        "display": "Dr. Cherrie404 Conn188"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "609ec9f1-e806-3427-b912-9e3b2915521d"
+        },
+        "display": "HOLYOKE VISITING NURSE ASSOC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "523cbf36-2a49-37ea-b20e-4a708fcfc727"
+        },
+        "display": "HOLYOKE VISITING NURSE ASSOC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "4135345691"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Cherrie404.Conn188@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:ad955c62-f9a1-3dc9-926e-c6dac8cc808a",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "ad955c62-f9a1-3dc9-926e-c6dac8cc808a",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 2
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999937995"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Cummerata161",
+        "given": [ "Karla801" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Karla801.Cummerata161@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "776 WESTERN AVE" ],
+        "city": "LYNN",
+        "state": "MA",
+        "postalCode": "019052408",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999937995"
+    }
+  }, {
+    "fullUrl": "urn:uuid:dacd02db-860c-e0ab-e818-d6cd3876392e",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "dacd02db-860c-e0ab-e818-d6cd3876392e",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999937995"
+        },
+        "display": "Dr. Karla801 Cummerata161"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "a14e698d-a9ba-3eae-9c8b-682ec726433d"
+        },
+        "display": "LYNN URGENT CARE LLC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "ff8b4bf7-6d5b-3c61-ae06-d4dce23241ae"
+        },
+        "display": "LYNN URGENT CARE LLC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178939901"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Karla801.Cummerata161@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:09a589be-dc0c-33e0-a986-2d2b571bec26",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "09a589be-dc0c-33e0-a986-2d2b571bec26",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 102
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999993998"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Batz141",
+        "given": [ "Willian804" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Willian804.Batz141@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "88 EAST NEWTON STREET" ],
+        "city": "WINTHROP",
+        "state": "MA",
+        "postalCode": "021522715",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999993998"
+    }
+  }, {
+    "fullUrl": "urn:uuid:79ad85be-f71b-95f9-f543-87b4c053e4fd",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "79ad85be-f71b-95f9-f543-87b4c053e4fd",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999993998"
+        },
+        "display": "Dr. Willian804 Batz141"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "0fedae9f-701f-3317-9b2f-69aea2202cdc"
+        },
+        "display": "BOSTON MEDICAL CENTER CORPORATION-"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "5d5ac7a4-7c31-3868-a7c1-d16c34243530"
+        },
+        "display": "BOSTON MEDICAL CENTER CORPORATION-"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "6176388000"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Willian804.Batz141@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:462c3e8f-50be-3b6a-8eb1-ca54c209b8e0",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "462c3e8f-50be-3b6a-8eb1-ca54c209b8e0",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 903
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999996793"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Abbott774",
+        "given": [ "Bennie663" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Bennie663.Abbott774@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "41 & 45 MALL ROAD" ],
+        "city": "PEABODY",
+        "state": "MA",
+        "postalCode": "019602901",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999996793"
+    }
+  }, {
+    "fullUrl": "urn:uuid:b193f70b-5752-92a3-ec66-0132353c638d",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "b193f70b-5752-92a3-ec66-0132353c638d",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999996793"
+        },
+        "display": "Dr. Bennie663 Abbott774"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "440fa4b8-c731-3cf5-81d9-aa3f30a37b95"
+        },
+        "display": "LAHEY HOSPITAL & MEDICAL CENTER, BURLINGTON"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "89c228b8-12e8-3436-9c1a-2bed9ee524d2"
+        },
+        "display": "LAHEY HOSPITAL & MEDICAL CENTER, BURLINGTON"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "7817445100"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Bennie663.Abbott774@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:014f83a4-affe-36b1-b3d6-0ce31285cf43",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "014f83a4-affe-36b1-b3d6-0ce31285cf43",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 2
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999937797"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Kutch271",
+        "given": [ "Bertram873" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Bertram873.Kutch271@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "856 STATE RD" ],
+        "city": "NORTH ADAMS",
+        "state": "MA",
+        "postalCode": "012473027",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999937797"
+    }
+  }, {
+    "fullUrl": "urn:uuid:f67c7a46-468d-e3d1-5496-55d9a4eb9439",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "f67c7a46-468d-e3d1-5496-55d9a4eb9439",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999937797"
+        },
+        "display": "Dr. Bertram873 Kutch271"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "d4e48a16-0a60-3e90-81e5-c35b22ffe6af"
+        },
+        "display": "GREEN MOUNTAIN URGENT CARE LLC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "61728ca7-d723-3602-a9b5-e6efddc42982"
+        },
+        "display": "GREEN MOUNTAIN URGENT CARE LLC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "6035264635"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Bertram873.Kutch271@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:a8e1a195-1002-305b-95e7-3b7ba89ccb50",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "a8e1a195-1002-305b-95e7-3b7ba89ccb50",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 69
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999945790"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Bernhard322",
+        "given": [ "Will178" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Will178.Bernhard322@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1030 FALMOUTH RD" ],
+        "city": "SOUTH YARMOUTH",
+        "state": "MA",
+        "postalCode": "026641218",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999945790"
+    }
+  }, {
+    "fullUrl": "urn:uuid:88b1feb4-220d-bbb3-93c4-f91a3b752118",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "88b1feb4-220d-bbb3-93c4-f91a3b752118",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999945790"
+        },
+        "display": "Dr. Will178 Bernhard322"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "0d24cc89-3256-330c-b36d-d8de8babef84"
+        },
+        "display": "CAPE COD HEALTHCARE PHYSICIANS"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "6e22abbe-b3a1-39a8-a429-9957b3244188"
+        },
+        "display": "CAPE COD HEALTHCARE PHYSICIANS"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "5087784777"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Will178.Bernhard322@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:c4d8987b-b3be-384e-a9f1-e633104413ba",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "c4d8987b-b3be-384e-a9f1-e633104413ba",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 11
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999890293"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Gleason633",
+        "given": [ "Judy192" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Judy192.Gleason633@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "8 DANA STREET" ],
+        "city": "CAMBRIDGE",
+        "state": "MA",
+        "postalCode": "021385402",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999890293"
+    }
+  }, {
+    "fullUrl": "urn:uuid:b2c95567-2f4f-45da-46e4-3c1977f2bfff",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "b2c95567-2f4f-45da-46e4-3c1977f2bfff",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999890293"
+        },
+        "display": "Dr. Judy192 Gleason633"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "db28cc9a-fdfb-35a6-aef7-ab9b933ef244"
+        },
+        "display": "CAMBRIDGE REHABILITATION & NURSING CENTER"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "9a277a7c-edef-39ed-a619-58dc818c416d"
+        },
+        "display": "CAMBRIDGE REHABILITATION & NURSING CENTER"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178644267"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Judy192.Gleason633@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:4b69a0e0-c13f-336a-adde-77ec38ef8b89",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "4b69a0e0-c13f-336a-adde-77ec38ef8b89",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 10
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999888891"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Balistreri607",
+        "given": [ "Man114" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Man114.Balistreri607@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "2049 DORCHESTER AVENUE" ],
+        "city": "BOSTON",
+        "state": "MA",
+        "postalCode": "021244742",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999888891"
+    }
+  }, {
+    "fullUrl": "urn:uuid:454b98dc-448e-4b66-2e5c-382c07c961b8",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "454b98dc-448e-4b66-2e5c-382c07c961b8",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999888891"
+        },
+        "display": "Dr. Man114 Balistreri607"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "be509ccb-bfb7-3b87-8945-8426b689ef9d"
+        },
+        "display": "BOSTON HOME, INC (THE)"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "0b9636e4-045c-3489-9a61-53e087cda329"
+        },
+        "display": "BOSTON HOME, INC (THE)"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178253905"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Man114.Balistreri607@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:e93ce4ef-48ef-355f-b707-138c19b615ed",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "e93ce4ef-48ef-355f-b707-138c19b615ed",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 56
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999940999"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Sawayn19",
+        "given": [ "Taisha184" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Taisha184.Sawayn19@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "80 SUMMER ST STE 1" ],
+        "city": "BOSTON",
+        "state": "MA",
+        "postalCode": "021101218",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999940999"
+    }
+  }, {
+    "fullUrl": "urn:uuid:e7ff2d9f-6e21-bc4b-968a-4719371d4ddd",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "e7ff2d9f-6e21-bc4b-968a-4719371d4ddd",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999940999"
+        },
+        "display": "Dr. Taisha184 Sawayn19"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "c0719377-d40a-3e9c-9f7c-af47c93b3f40"
+        },
+        "display": "CARBON HEALTH PRIMARY CARE OF FLORIDA PA"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "551bb30f-ff5b-3c6e-98ed-938ef9775cdd"
+        },
+        "display": "CARBON HEALTH PRIMARY CARE OF FLORIDA PA"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178652749"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Taisha184.Sawayn19@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:bad8cc33-b50e-3604-9743-1211a0945356",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "bad8cc33-b50e-3604-9743-1211a0945356",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 2
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999937896"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Bosco882",
+        "given": [ "Tambra47" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Tambra47.Bosco882@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1238 RIVERDALE ST" ],
+        "city": "WEST SPRINGFIELD",
+        "state": "MA",
+        "postalCode": "010894675",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999937896"
+    }
+  }, {
+    "fullUrl": "urn:uuid:b7463568-adb1-eb97-d95a-af4b5bd58151",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "b7463568-adb1-eb97-d95a-af4b5bd58151",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999937896"
+        },
+        "display": "Dr. Tambra47 Bosco882"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "70e3ad4f-b9ff-3f3e-9990-2cd7e23a9d1c"
+        },
+        "display": "HEALTH-MD URGENT CARE"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "c90eacba-39d3-3606-8652-32ab9c07e724"
+        },
+        "display": "HEALTH-MD URGENT CARE"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "4135043507"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Tambra47.Bosco882@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:5fe2b5bb-eb23-32bb-8213-ac5360a43501",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "5fe2b5bb-eb23-32bb-8213-ac5360a43501",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 1
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999871194"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "D'Amore443",
+        "given": [ "Josue598" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Josue598.D'Amore443@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "44 NEW LOMBARD RD" ],
+        "city": "CHICOPEE",
+        "state": "MA",
+        "postalCode": "010204857",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999871194"
+    }
+  }, {
+    "fullUrl": "urn:uuid:89fdd3ef-beb1-4b90-cf3d-52ccad98d044",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "89fdd3ef-beb1-4b90-cf3d-52ccad98d044",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999871194"
+        },
+        "display": "Dr. Josue598 D'Amore443"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "5a6fa8a5-90e2-3f70-bb3e-3d9dd7ad2f96"
+        },
+        "display": "CHICOPEE REHABILITATION AND NURSING CENTER LLC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "ccea3021-9716-3218-a8cb-7a701fe63b44"
+        },
+        "display": "CHICOPEE REHABILITATION AND NURSING CENTER LLC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "7189740266"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Josue598.D'Amore443@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:1a511063-f783-31d8-bb34-95eb6abbe1ee",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "1a511063-f783-31d8-bb34-95eb6abbe1ee",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 680
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999990598"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Mann644",
+        "given": [ "Kai187" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Kai187.Mann644@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "133 OLD ROAD TO 9 ACRE COR" ],
+        "city": "WESTFORD",
+        "state": "MA",
+        "postalCode": "018863198",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999990598"
+    }
+  }, {
+    "fullUrl": "urn:uuid:f90ab09d-e0e1-10e4-f3a2-77bc7f0442b8",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "f90ab09d-e0e1-10e4-f3a2-77bc7f0442b8",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999990598"
+        },
+        "display": "Dr. Kai187 Mann644"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "06cc2462-430f-3322-9c87-7e971125f510"
+        },
+        "display": "EMERSON HOSPITAL"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "ab557804-9cef-3574-92f3-faccf764e1c9"
+        },
+        "display": "EMERSON HOSPITAL"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "9782873226"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Kai187.Mann644@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:7d85461c-5873-3fb4-8df1-4b81525713fe",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "7d85461c-5873-3fb4-8df1-4b81525713fe",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 31
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999949198"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Leannon79",
+        "given": [ "Florance664" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Florance664.Leannon79@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "37 MINUTEMAN WAY" ],
+        "city": "SHREWSBURY",
+        "state": "MA",
+        "postalCode": "015452229",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999949198"
+    }
+  }, {
+    "fullUrl": "urn:uuid:6e254855-6da1-e07b-f39c-0647ecf5413e",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "6e254855-6da1-e07b-f39c-0647ecf5413e",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999949198"
+        },
+        "display": "Dr. Florance664 Leannon79"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "a2d45ee8-b930-3169-b612-f602961ad212"
+        },
+        "display": "SUNRISE HEALTHCARE LLC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "47a2789d-e285-3254-8365-34149cfbc8d1"
+        },
+        "display": "SUNRISE HEALTHCARE LLC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "6176509959"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Florance664.Leannon79@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:9f958e95-fe82-3bcc-9893-d3bafaba4835",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "9f958e95-fe82-3bcc-9893-d3bafaba4835",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 8
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999993691"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Quigley282",
+        "given": [ "Dorcas534" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Dorcas534.Quigley282@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "725 NORTH ST" ],
+        "city": "PITTSFIELD",
+        "state": "MA",
+        "postalCode": "012014109",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999993691"
+    }
+  }, {
+    "fullUrl": "urn:uuid:aa81be6f-f4b8-bc7b-9043-7edeab79ae78",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "aa81be6f-f4b8-bc7b-9043-7edeab79ae78",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999993691"
+        },
+        "display": "Dr. Dorcas534 Quigley282"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "f43f97f2-af04-3ed0-a42e-3681718cc9b2"
+        },
+        "display": "BERKSHIRE MEDICAL CENTER INC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "1643c041-95c7-3639-932b-2e8ea85c7d82"
+        },
+        "display": "BERKSHIRE MEDICAL CENTER INC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "4134472000"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Dorcas534.Quigley282@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:7159fcbe-5c69-35bd-b8fe-a56e46b9e360",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "7159fcbe-5c69-35bd-b8fe-a56e46b9e360",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 4
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999894691"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Reinger292",
+        "given": [ "Karri995" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Karri995.Reinger292@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "981 VARNUM AVENUE" ],
+        "city": "LOWELL",
+        "state": "MA",
+        "postalCode": "018541913",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999894691"
+    }
+  }, {
+    "fullUrl": "urn:uuid:b2b1876f-5986-050e-6c22-3e1df9b163b3",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "b2b1876f-5986-050e-6c22-3e1df9b163b3",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999894691"
+        },
+        "display": "Dr. Karri995 Reinger292"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "f438b8e0-d856-328a-b193-2b014fc4cb97"
+        },
+        "display": "D'YOUVILLE SENIOR CARE"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "768666e6-7ff9-34cb-bb2c-e2e9da6bcfc2"
+        },
+        "display": "D'YOUVILLE SENIOR CARE"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "9784545681"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Karri995.Reinger292@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:dbb5a05f-a987-308c-ae98-2c36dea3a4f8",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "dbb5a05f-a987-308c-ae98-2c36dea3a4f8",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 1
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999867499"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Hilll811",
+        "given": [ "Nikki942" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Nikki942.Hilll811@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "146 PARK AVE" ],
+        "city": "ARLINGTON",
+        "state": "MA",
+        "postalCode": "024765829",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999867499"
+    }
+  }, {
+    "fullUrl": "urn:uuid:08fc4454-ebd9-47cd-dad3-86e19a12010f",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "08fc4454-ebd9-47cd-dad3-86e19a12010f",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999867499"
+        },
+        "display": "Dr. Nikki942 Hilll811"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "335fe080-43f9-3219-84bd-031c4fcfe9d5"
+        },
+        "display": "PARK AVENUE SNF OPERATIONS LLC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "e89159fd-3f0a-325f-9e0f-6b5b442395cf"
+        },
+        "display": "PARK AVENUE SNF OPERATIONS LLC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "7816489530"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Nikki942.Hilll811@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:edc75a65-595b-3143-8910-61fa1823a404",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "edc75a65-595b-3143-8910-61fa1823a404",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 31
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999967398"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Hudson301",
+        "given": [ "Sherita708" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Sherita708.Hudson301@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "409 W BROADWAY" ],
+        "city": "SOUTH BOSTON",
+        "state": "MA",
+        "postalCode": "021272245",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999967398"
+    }
+  }, {
+    "fullUrl": "urn:uuid:bca70102-de3f-28b3-fb0b-b7fb49806040",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "bca70102-de3f-28b3-fb0b-b7fb49806040",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999967398"
+        },
+        "display": "Dr. Sherita708 Hudson301"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "79d49935-bcc0-36ca-920b-45365c367438"
+        },
+        "display": "SOUTH BOSTON COMMUNITY HEALTH CENTER INC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "75a53ceb-dc3f-347d-8cfb-f2f5a42837d1"
+        },
+        "display": "SOUTH BOSTON COMMUNITY HEALTH CENTER INC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "6172697500"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Sherita708.Hudson301@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:0dad94fb-dd1a-3aba-b341-7d0427ea67c5",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "0dad94fb-dd1a-3aba-b341-7d0427ea67c5",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 435
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999992198"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Bergstrom287",
+        "given": [ "Randy380" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Randy380.Bergstrom287@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "27 PARK ST" ],
+        "city": "HYANNIS",
+        "state": "MA",
+        "postalCode": "026015230",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999992198"
+    }
+  }, {
+    "fullUrl": "urn:uuid:7fd6e6a2-fc63-be62-3d80-653aa7371f22",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "7fd6e6a2-fc63-be62-3d80-653aa7371f22",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999992198"
+        },
+        "display": "Dr. Randy380 Bergstrom287"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "497f39dd-280e-3d58-af5b-c5e3a3a09b10"
+        },
+        "display": "CAPE COD HOSPITAL INC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "92b97a14-2913-30e3-99ba-39c987e4a9f6"
+        },
+        "display": "CAPE COD HOSPITAL INC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "5087711800"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Randy380.Bergstrom287@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:cdb24832-8e54-3815-bfde-685c08383896",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "cdb24832-8e54-3815-bfde-685c08383896",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 109
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999993592"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Eichmann909",
+        "given": [ "Latoria810" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Latoria810.Eichmann909@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "725 NORTH ST" ],
+        "city": "PITTSFIELD",
+        "state": "MA",
+        "postalCode": "012014109",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999993592"
+    }
+  }, {
+    "fullUrl": "urn:uuid:133fb19c-581e-319e-f07d-af04b9de298e",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "133fb19c-581e-319e-f07d-af04b9de298e",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999993592"
+        },
+        "display": "Dr. Latoria810 Eichmann909"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "1ab2b5f9-cb95-3236-beec-9b9d4a407c61"
+        },
+        "display": "BERKSHIRE MEDICAL CENTER INC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "0c4ec7f1-f573-37e1-8c90-f1677e4750d2"
+        },
+        "display": "BERKSHIRE MEDICAL CENTER INC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "4134472000"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Latoria810.Eichmann909@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:22df7b33-df91-300c-952c-e607a629fc0c",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "22df7b33-df91-300c-952c-e607a629fc0c",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 154
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999986893"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Dicki44",
+        "given": [ "Santina680" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Santina680.Dicki44@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "750 WASHINGTON ST" ],
+        "city": "BOSTON",
+        "state": "MA",
+        "postalCode": "021111552",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999986893"
+    }
+  }, {
+    "fullUrl": "urn:uuid:5dfb1927-03cf-a44f-fdff-86bbad316f88",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "5dfb1927-03cf-a44f-fdff-86bbad316f88",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999986893"
+        },
+        "display": "Dr. Santina680 Dicki44"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "0d1570ab-371c-3898-9397-95905d8c5166"
+        },
+        "display": "TUFTS MEDICAL CENTER, INC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "e1422937-ff27-34bf-81fe-7dc3fa012770"
+        },
+        "display": "TUFTS MEDICAL CENTER, INC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "6176365442"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Santina680.Dicki44@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:62f218fc-a166-3a52-9d2f-64fa0f4782ba",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "62f218fc-a166-3a52-9d2f-64fa0f4782ba",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 3
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999940494"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Dickinson688",
+        "given": [ "Elizbeth263" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Elizbeth263.Dickinson688@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1399 WASHINGTON ST" ],
+        "city": "HANOVER",
+        "state": "MA",
+        "postalCode": "023391653",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999940494"
+    }
+  }, {
+    "fullUrl": "urn:uuid:51943a17-5248-5d0b-7cd4-63393dc1d967",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "51943a17-5248-5d0b-7cd4-63393dc1d967",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999940494"
+        },
+        "display": "Dr. Elizbeth263 Dickinson688"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "2ca615f3-87f7-3283-a447-d919a883b676"
+        },
+        "display": "HANOVER FAMILY HEALTH & URGENT CARE PC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "e27b66f2-8695-3f8f-9077-e5f4e0cc56c5"
+        },
+        "display": "HANOVER FAMILY HEALTH & URGENT CARE PC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "7818290895"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Elizbeth263.Dickinson688@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:688bb861-046e-35e0-8de7-ad1bd4e5f41d",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "688bb861-046e-35e0-8de7-ad1bd4e5f41d",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 16
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999898890"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Conn188",
+        "given": [ "Elisha578" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Elisha578.Conn188@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "22 JOHNSON STREET" ],
+        "city": "PEABODY",
+        "state": "MA",
+        "postalCode": "019602311",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999898890"
+    }
+  }, {
+    "fullUrl": "urn:uuid:4fe84bd9-d508-b1b8-a1ed-ee7199299325",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "4fe84bd9-d508-b1b8-a1ed-ee7199299325",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999898890"
+        },
+        "display": "Dr. Elisha578 Conn188"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "8ec2ca51-abb4-35dd-b90f-6c6aad6d2124"
+        },
+        "display": "ALLIANCE HEALTH AT ROSEWOOD"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "4e165c5c-0402-33cb-8a45-2d8ce9c12fa8"
+        },
+        "display": "ALLIANCE HEALTH AT ROSEWOOD"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "9785358700"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Elisha578.Conn188@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:6b6f4c7c-33e3-3a23-be62-64d28152bdda",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "6b6f4c7c-33e3-3a23-be62-64d28152bdda",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 68
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999949099"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Kilback373",
+        "given": [ "Rosario163" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Rosario163.Kilback373@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1 FARMER CIR" ],
+        "city": "ARLINGTON",
+        "state": "MA",
+        "postalCode": "024742866",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999949099"
+    }
+  }, {
+    "fullUrl": "urn:uuid:6e647299-ba20-7cee-50a9-db00f76e1172",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "6e647299-ba20-7cee-50a9-db00f76e1172",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999949099"
+        },
+        "display": "Dr. Rosario163 Kilback373"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "9fdce5d5-d4d0-3156-a8d5-8757bfe4e9b3"
+        },
+        "display": "ONE CALL HEALTHCARE PLLC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "f3f1618f-da04-3617-976f-68a8e0bd41b1"
+        },
+        "display": "ONE CALL HEALTHCARE PLLC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178660789"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Rosario163.Kilback373@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:72bde688-82df-3137-9071-a755a899c718",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "72bde688-82df-3137-9071-a755a899c718",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 53
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999947291"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Tromp100",
+        "given": [ "Carmelita854" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Carmelita854.Tromp100@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1223 BEACON ST STE A" ],
+        "city": "BROOKLINE",
+        "state": "MA",
+        "postalCode": "024465332",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999947291"
+    }
+  }, {
+    "fullUrl": "urn:uuid:e4f4d7cb-6d35-4f9c-894b-79b991f942ca",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "e4f4d7cb-6d35-4f9c-894b-79b991f942ca",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999947291"
+        },
+        "display": "Dr. Carmelita854 Tromp100"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "e5b9db6a-8dd8-3622-b9ce-3dc593e111d1"
+        },
+        "display": "ENGRACE HEALTHCARE PRACTICE LLC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "68f95c8c-f686-3d3b-a438-7b0fb4aa7b30"
+        },
+        "display": "ENGRACE HEALTHCARE PRACTICE LLC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "6177391122"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Carmelita854.Tromp100@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:8c590d53-95c2-3edb-bef2-612f744fc3a1",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "8c590d53-95c2-3edb-bef2-612f744fc3a1",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 46
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999942896"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Fritsch593",
+        "given": [ "Arla414" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Arla414.Fritsch593@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "821 E MAIN ST STE 3" ],
+        "city": "CHICOPEE",
+        "state": "MA",
+        "postalCode": "010206306",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999942896"
+    }
+  }, {
+    "fullUrl": "urn:uuid:b213db4d-731b-8c80-5d1c-e3aa11ea3fda",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "b213db4d-731b-8c80-5d1c-e3aa11ea3fda",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999942896"
+        },
+        "display": "Dr. Arla414 Fritsch593"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "aad05540-c9cb-3805-b3c4-f9b9d9b42b2e"
+        },
+        "display": "RIVER'S EDGE PRIMARY CARE LLC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "a3d9fbb2-8e79-3105-8bf0-ccd519a97ca2"
+        },
+        "display": "RIVER'S EDGE PRIMARY CARE LLC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "4136956774"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Arla414.Fritsch593@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:40a6adb0-9fe5-3107-be88-38de5b81cfdb",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "40a6adb0-9fe5-3107-be88-38de5b81cfdb",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 52
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999987693"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Rohan584",
+        "given": [ "Theo630" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Theo630.Rohan584@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "55 LAKE AVE N" ],
+        "city": "WORCESTER",
+        "state": "MA",
+        "postalCode": "016550002",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999987693"
+    }
+  }, {
+    "fullUrl": "urn:uuid:64b8eec6-5969-fd39-d0de-7f0a280445c5",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "64b8eec6-5969-fd39-d0de-7f0a280445c5",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999987693"
+        },
+        "display": "Dr. Theo630 Rohan584"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "1cec4304-9757-3a10-ad4f-7e2090c56131"
+        },
+        "display": "UMASS MEMORIAL MEDICAL CENTER INC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "34d300db-86bd-3ca9-9a41-bf7ac5895e52"
+        },
+        "display": "UMASS MEMORIAL MEDICAL CENTER INC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "5083340254"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Theo630.Rohan584@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:9d93afb6-e309-3478-8c5a-c7ab9b800053",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "9d93afb6-e309-3478-8c5a-c7ab9b800053",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 62
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999957191"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Schneider199",
+        "given": [ "Hank686" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Hank686.Schneider199@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "817 MERRIMACK ST" ],
+        "city": "LOWELL",
+        "state": "MA",
+        "postalCode": "018543548",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999957191"
+    }
+  }, {
+    "fullUrl": "urn:uuid:452ad13f-e36d-b009-cdc7-454587324a1b",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "452ad13f-e36d-b009-cdc7-454587324a1b",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999957191"
+        },
+        "display": "Dr. Hank686 Schneider199"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "84d5768f-3a21-3da9-aad2-bbf7a3ae2700"
+        },
+        "display": "LOWELL FAMILY MEDICAL CARE PC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "4388e9fe-05d7-36cf-ae9b-f363dd88fb54"
+        },
+        "display": "LOWELL FAMILY MEDICAL CARE PC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "9784530550"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Hank686.Schneider199@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:b2cf4bf2-04e2-3b30-8c1f-99348b0e3653",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "b2cf4bf2-04e2-3b30-8c1f-99348b0e3653",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 81
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999939199"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Portillo767",
+        "given": [ "Josefina523" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Josefina523.Portillo767@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "147 S MAIN ST" ],
+        "city": "MIDDLETON",
+        "state": "MA",
+        "postalCode": "019492446",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999939199"
+    }
+  }, {
+    "fullUrl": "urn:uuid:3522f468-cb4b-2b53-cfe1-bf5eb29b3ec7",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "3522f468-cb4b-2b53-cfe1-bf5eb29b3ec7",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999939199"
+        },
+        "display": "Dr. Josefina523 Portillo767"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "9ce6072b-d039-3cde-8eaf-950211b8ae88"
+        },
+        "display": "MIDDLETON FAMILY MEDICINE URGENT CARE, LLC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "340fb698-66ad-37b5-a6d7-12214e8b5287"
+        },
+        "display": "MIDDLETON FAMILY MEDICINE URGENT CARE, LLC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "9787742555"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Josefina523.Portillo767@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:5a0eba80-cfc2-347f-9d3e-a89fcad975b3",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "5a0eba80-cfc2-347f-9d3e-a89fcad975b3",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 5
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999867390"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Sanford861",
+        "given": [ "Breana975" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Breana975.Sanford861@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "840 EMERSON GARDENS ROAD" ],
+        "city": "LEXINGTON",
+        "state": "MA",
+        "postalCode": "02420",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999867390"
+    }
+  }, {
+    "fullUrl": "urn:uuid:638eb6c4-cab6-3164-4493-9f8396730176",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "638eb6c4-cab6-3164-4493-9f8396730176",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999867390"
+        },
+        "display": "Dr. Breana975 Sanford861"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "058176fd-cbb0-328b-8411-c19f5045032d"
+        },
+        "display": "EXCEL CENTER FOR NURSING AND REHAB AT LEXINGTON"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "28eb9d2d-78fe-3656-86a0-a991d7f7ed33"
+        },
+        "display": "EXCEL CENTER FOR NURSING AND REHAB AT LEXINGTON"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "7818618630"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Breana975.Sanford861@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:dc9af731-a5bb-35d0-af98-b5097d71bd3a",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "dc9af731-a5bb-35d0-af98-b5097d71bd3a",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 43
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999886390"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Gutmann970",
+        "given": [ "Shayne60" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Shayne60.Gutmann970@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "265 N MAIN ST" ],
+        "city": "SOUTH YARMOUTH",
+        "state": "MA",
+        "postalCode": "026642083",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999886390"
+    }
+  }, {
+    "fullUrl": "urn:uuid:019cebec-12cb-0d14-29c5-3564a8f80f56",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "019cebec-12cb-0d14-29c5-3564a8f80f56",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999886390"
+        },
+        "display": "Dr. Shayne60 Gutmann970"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "a036cdf2-bbc5-3ffd-987f-56e437fd8b74"
+        },
+        "display": "WINDSOR NURSING & RETIREMENT HOME"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "1a3e0e85-0de4-360b-981c-53434f0c0a0e"
+        },
+        "display": "WINDSOR NURSING & RETIREMENT HOME"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "5083943514"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Shayne60.Gutmann970@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:eeb28ef1-7b77-3daf-95d6-766e38e63584",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "eeb28ef1-7b77-3daf-95d6-766e38e63584",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 47
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999993295"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Wolf938",
+        "given": [ "Barrett790" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Barrett790.Wolf938@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "575 BEECH ST" ],
+        "city": "HOLYOKE",
+        "state": "MA",
+        "postalCode": "010402223",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999993295"
+    }
+  }, {
+    "fullUrl": "urn:uuid:98e1ddec-b7cd-0644-f1bd-f66ffa5e0e6f",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "98e1ddec-b7cd-0644-f1bd-f66ffa5e0e6f",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999993295"
+        },
+        "display": "Dr. Barrett790 Wolf938"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "4f5e8f16-a31b-3071-8556-d7188ede313d"
+        },
+        "display": "HOLYOKE MEDICAL CENTER INC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "d261e902-ea03-3f5f-8869-4a647b897d89"
+        },
+        "display": "HOLYOKE MEDICAL CENTER INC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "4135342805"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Barrett790.Wolf938@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:c31cafb0-715a-3bcc-af3f-bb33052574ce",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "c31cafb0-715a-3bcc-af3f-bb33052574ce",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 1
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999939090"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Garay400",
+        "given": [ "Lorena247" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Lorena247.Garay400@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1285 BEACON ST" ],
+        "city": "WOBURN",
+        "state": "MA",
+        "postalCode": "018012157",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999939090"
+    }
+  }, {
+    "fullUrl": "urn:uuid:e2c1aa2c-fe11-b4c3-d9fe-c9880b437448",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "e2c1aa2c-fe11-b4c3-d9fe-c9880b437448",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999939090"
+        },
+        "display": "Dr. Lorena247 Garay400"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "a25107f7-f4f5-36fc-98e4-f3e1b5875c91"
+        },
+        "display": "MASS GENERAL BRIGHAM URGENT CARE LLC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "cf117c25-4eca-3432-af54-bf059141b5ea"
+        },
+        "display": "MASS GENERAL BRIGHAM URGENT CARE LLC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "6177516205"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Lorena247.Garay400@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:0328bc29-291d-38ae-9ad6-d9167105502b",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "0328bc29-291d-38ae-9ad6-d9167105502b",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 7
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999889998"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Breitenberg711",
+        "given": [ "Harland508" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Harland508.Breitenberg711@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "115 NORTH AVENUE" ],
+        "city": "ROCKLAND",
+        "state": "MA",
+        "postalCode": "023702129",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999889998"
+    }
+  }, {
+    "fullUrl": "urn:uuid:f504e26a-f84d-9660-b5c4-26863adcaef6",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "f504e26a-f84d-9660-b5c4-26863adcaef6",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999889998"
+        },
+        "display": "Dr. Harland508 Breitenberg711"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "83769f98-fff3-3535-8781-6ace5957136f"
+        },
+        "display": "SOUTHSHORE HEALTH CARE CENTER"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "1aec578b-2818-3402-8af2-109f871d854a"
+        },
+        "display": "SOUTHSHORE HEALTH CARE CENTER"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "7818783308"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Harland508.Breitenberg711@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:06b4f4a7-6c78-3b08-9d90-8d046047fa5c",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "06b4f4a7-6c78-3b08-9d90-8d046047fa5c",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 63
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999989897"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Jakubowski832",
+        "given": [ "Cira533" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Cira533.Jakubowski832@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "2 REHABILITATION WAY" ],
+        "city": "WOBURN",
+        "state": "MA",
+        "postalCode": "018016003",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999989897"
+    }
+  }, {
+    "fullUrl": "urn:uuid:299a9c17-ffbb-9cc4-c826-ccd902694155",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "299a9c17-ffbb-9cc4-c826-ccd902694155",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999989897"
+        },
+        "display": "Dr. Cira533 Jakubowski832"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "217cb6f6-e822-3831-9d9d-ffa104971042"
+        },
+        "display": "ENCOMPASS HEALTH REHABILITATION HOSP OF NEW ENGLAN"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "ea493903-a9cf-337a-972e-d216c2bf21fa"
+        },
+        "display": "ENCOMPASS HEALTH REHABILITATION HOSP OF NEW ENGLAN"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "7819355050"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Cira533.Jakubowski832@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:72ea5b52-e58c-3068-8d1c-2acc8239ca81",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "72ea5b52-e58c-3068-8d1c-2acc8239ca81",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 9
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999881391"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Rowe323",
+        "given": [ "Sebastian508" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Sebastian508.Rowe323@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "265 MAIN STREET" ],
+        "city": "DALTON",
+        "state": "MA",
+        "postalCode": "012261614",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999881391"
+    }
+  }, {
+    "fullUrl": "urn:uuid:486e79bd-0504-8381-1d07-f3767890a51a",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "486e79bd-0504-8381-1d07-f3767890a51a",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999881391"
+        },
+        "display": "Dr. Sebastian508 Rowe323"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "65dac97b-bb0c-38ae-94bc-bf29ac9687ea"
+        },
+        "display": "CRANEVILLE PLACE REHABILITATION & SKILLED  CARE CT"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "0e7ef1bc-f665-333b-9ca3-8c058b6091f1"
+        },
+        "display": "CRANEVILLE PLACE REHABILITATION & SKILLED  CARE CT"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "4136843212"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Sebastian508.Rowe323@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:55967aa9-a88c-3400-9134-d35ca0db739f",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "55967aa9-a88c-3400-9134-d35ca0db739f",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 4
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999905299"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Walker122",
+        "given": [ "Rupert654" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Rupert654.Walker122@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "123 CAPTAIN'S ROW" ],
+        "city": "CHELSEA",
+        "state": "MA",
+        "postalCode": "021504019",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999905299"
+    }
+  }, {
+    "fullUrl": "urn:uuid:e49e3d68-3f49-061c-6561-c62b8de3157e",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "e49e3d68-3f49-061c-6561-c62b8de3157e",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999905299"
+        },
+        "display": "Dr. Rupert654 Walker122"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "b954c464-11ea-312b-a3f8-1350775bfa54"
+        },
+        "display": "CHELSEA JEWISH HOSPICE AND PALLIATIVE CARE"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "9e3707cb-817a-33e5-86ff-f3e74bcd6b4f"
+        },
+        "display": "CHELSEA JEWISH HOSPICE AND PALLIATIVE CARE"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178890779"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Rupert654.Walker122@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:dba57fa9-ed26-3d95-aae9-c76780c5ea55",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "dba57fa9-ed26-3d95-aae9-c76780c5ea55",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 44
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999953299"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Wunsch504",
+        "given": [ "Leonie332" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Leonie332.Wunsch504@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "200 CORDWAINER DR" ],
+        "city": "NORWELL",
+        "state": "MA",
+        "postalCode": "020611671",
+        "country": "US"
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999953299"
+    }
+  }, {
+    "fullUrl": "urn:uuid:5d8bd87c-b49e-6ac3-e369-9a9017a104c4",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "5d8bd87c-b49e-6ac3-e369-9a9017a104c4",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999953299"
+        },
+        "display": "Dr. Leonie332 Wunsch504"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "91808f17-7583-32a3-aa55-23b131b327c7"
+        },
+        "display": "SOUTH SHORE CENTER FOR WELLNESS LTD"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "cb10fc5f-9370-332c-8653-a69c8f5e815d"
+        },
+        "display": "SOUTH SHORE CENTER FOR WELLNESS LTD"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "7818788340"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Leonie332.Wunsch504@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:3c92c1f4-8926-31ea-968c-35c0b29bddc7",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "3c92c1f4-8926-31ea-968c-35c0b29bddc7",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 10
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999938498"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "McDermott739",
+        "given": [ "Abraham100" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Abraham100.McDermott739@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "45 DRUM HILL RD" ],
+        "city": "CHELMSFORD",
+        "state": "MA",
+        "postalCode": "018241503",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999938498"
+    }
+  }, {
+    "fullUrl": "urn:uuid:dc02f6bd-5037-6058-212d-0810537d7a44",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "dc02f6bd-5037-6058-212d-0810537d7a44",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999938498"
+        },
+        "display": "Dr. Abraham100 McDermott739"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "c05d73d0-b348-32ce-9fe5-13a720950f37"
+        },
+        "display": "URGENT HELP CHELMSFORD PC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "f3a27424-c1f9-344d-a732-ded5d43323ed"
+        },
+        "display": "URGENT HELP CHELMSFORD PC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "9784467515"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Abraham100.McDermott739@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:0790c351-cbe4-376e-8f9d-442583f1bf79",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "0790c351-cbe4-376e-8f9d-442583f1bf79",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 133
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999938597"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Lemke654",
+        "given": [ "Anderson154" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Anderson154.Lemke654@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "20 EAST ST" ],
+        "city": "HANOVER",
+        "state": "MA",
+        "postalCode": "023391638",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999938597"
+    }
+  }, {
+    "fullUrl": "urn:uuid:6413c505-c231-ff95-7610-6303202edf60",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "6413c505-c231-ff95-7610-6303202edf60",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999938597"
+        },
+        "display": "Dr. Anderson154 Lemke654"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "0592d4e5-a0fb-3143-83cd-8e5a6b066a96"
+        },
+        "display": "SOUTH SHORE PRIMARY AND URGENT CARE LLC"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "babb5508-b5dd-3973-8aca-e80876d2ab06"
+        },
+        "display": "SOUTH SHORE PRIMARY AND URGENT CARE LLC"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "7815610460"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Anderson154.Lemke654@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:49382bb5-55e2-3514-ae9c-185c628827f7",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "49382bb5-55e2-3514-ae9c-185c628827f7",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 171
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999992099"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Hyatt152",
+        "given": [ "Kim439" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Kim439.Hyatt152@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "1575 CAMBRIDGE ST" ],
+        "city": "CAMBRIDGE",
+        "state": "MA",
+        "postalCode": "021384308",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999992099"
+    }
+  }, {
+    "fullUrl": "urn:uuid:f6cf3163-f50a-3ec5-851c-7f6da183ebcc",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "f6cf3163-f50a-3ec5-851c-7f6da183ebcc",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999992099"
+        },
+        "display": "Dr. Kim439 Hyatt152"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "ba07b31b-bf14-39b8-be95-4c5ca5062daa"
+        },
+        "display": "SPAULDING HOSPITAL FOR CONTINUING MED CARE-CAMB"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "d6dee237-1869-3f35-9bc5-45ed01391c83"
+        },
+        "display": "SPAULDING HOSPITAL FOR CONTINUING MED CARE-CAMB"
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "6178764344"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Kim439.Hyatt152@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  }, {
+    "fullUrl": "urn:uuid:3f2fc88b-74bf-3a60-9811-7a8a08a7c036",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "3f2fc88b-74bf-3a60-9811-7a8a08a7c036",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
+      "extension": [ {
+        "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+        "valueInteger": 46
+      } ],
+      "identifier": [ {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "9999987594"
+      } ],
+      "active": true,
+      "name": [ {
+        "family": "Funk324",
+        "given": [ "Houston994" ],
+        "prefix": [ "Dr." ]
+      } ],
+      "telecom": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Houston994.Funk324@example.com",
+        "use": "work"
+      } ],
+      "address": [ {
+        "line": [ "680 CENTRE ST" ],
+        "city": "BROCKTON",
+        "state": "MA",
+        "postalCode": "023023308",
+        "country": "US"
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "POST",
+      "url": "Practitioner",
+      "ifNoneExist": "identifier=http://hl7.org/fhir/sid/us-npi|9999987594"
+    }
+  }, {
+    "fullUrl": "urn:uuid:10771daf-7e91-5fb4-27f1-47569cdf6120",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "10771daf-7e91-5fb4-27f1-47569cdf6120",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" ]
+      },
+      "practitioner": {
+        "identifier": {
+          "system": "http://hl7.org/fhir/sid/us-npi",
+          "value": "9999987594"
+        },
+        "display": "Dr. Houston994 Funk324"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "6aae7a31-90df-3455-ad8d-81f8cf2d21e8"
+        },
+        "display": "BROCKTON HOSPITAL, INC."
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "specialty": [ {
+        "coding": [ {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice Physician"
+        } ],
+        "text": "General Practice Physician"
+      } ],
+      "location": [ {
+        "identifier": {
+          "system": "https://github.com/synthetichealth/synthea",
+          "value": "ab1eb2eb-5fe2-39b8-9c17-4f2131691379"
+        },
+        "display": "BROCKTON HOSPITAL, INC."
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "5089417000"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        } ],
+        "system": "email",
+        "value": "Houston994.Funk324@example.com",
+        "use": "work"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "PractitionerRole"
+    }
+  } ]
+}
