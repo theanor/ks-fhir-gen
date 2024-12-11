@@ -3,7 +3,7 @@ Class ks.fhir.dtl.vr4.bs.SyntheaGeneratorService Extends (Ens.BusinessService, k
 
 Parameter ADAPTER = "ks.fhir.dtl.vr4.ba.SyntheaBundleGeneratorAdapter";
 
-Parameter SETTINGS = "TargetConfigNames,TransformRule,RuleLogLevel";
+Parameter SETTINGS = "TargetConfigNames,TransformRule:Additional:ruleSelector,RuleLogging:Dev";
 
 Property Adapter As ks.fhir.dtl.vr4.ba.SyntheaBundleGeneratorAdapter;
 
@@ -13,8 +13,8 @@ Property TargetConfigNames As Ens.DataType.ConfigName;
 /// Business rule used to select transformation class
 Property TransformRule As %Dictionary.Classname [ InitialExpression = "ks.fhir.dtl.vr4.hl7.DefaultTransformRule" ];
 
-/// Rule log level
-Property RuleLogLevel As %String [ InitialExpression = {$$$eRuleLogTypeReturn} ];
+/// Rule logging
+Property RuleLogging As %String;
 
 /// Set this transient property during rule evaluation to the selected transform class name
 Property Transform As %Dictionary.Classname [ Transient ];
@@ -69,7 +69,7 @@ Method VisitResource(resource As %RegisteredObject, referenceResolver As ks.fhir
       $$$TRACE("visiting resource "_resource.id_" ("_resource.resourceType_")")
       s ..Resource = resource
       s ..Transform = ""    
-      $$$TOE(sc,##class(Ens.Rule.Definition).EvaluateRules(..TransformRule,..%SessionId,$this,"Generate",.returnValue,.reason,..RuleLogLevel))    
+      $$$TOE(sc,##class(Ens.Rule.Definition).EvaluateRules(..TransformRule,..%SessionId,$this,"Generate",.returnValue,.reason,..RuleLogging))    
       if returnValue {
         $$$TRACE("using transform "_..Transform)
         $$$TOE(sc,..SendTransformedMessage(..Transform,resource,referenceResolver))
