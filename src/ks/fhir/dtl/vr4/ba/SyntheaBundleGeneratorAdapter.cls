@@ -1,7 +1,7 @@
 Class ks.fhir.dtl.vr4.ba.SyntheaBundleGeneratorAdapter Extends Ens.InboundAdapter
 {
 
-Parameter SETTINGS = "CallInterval,SyntheaHome,SyntheaOutputDirectory,PatientCount,Seed";
+Parameter SETTINGS = "CallInterval,SyntheaHome,SyntheaOutputDirectory,PatientCount,Seed,BatchCount";
 
 /// Synthea home directory
 Property SyntheaHome As %String(MAXLEN = 1024) [ InitialExpression = {^RepositoryRoot_"/synthea"} ];
