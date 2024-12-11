@@ -9,14 +9,19 @@ Property SyntheaHome As %String(MAXLEN = 1024) [ InitialExpression = "/irisbuild
 /// Synthea output directory, CAVEAT: will be cleaned up on init
 Property SyntheaOutputDirectory As %String(MAXLEN = 1024) [ InitialExpression = "/irisbuild/synthea/output/fhir" ];
 
-/// Number of patients to generate
+/// Number of patients to generate per batch
 Property PatientCount As %Integer [ InitialExpression = 1, Required ];
+
+/// Number of batches to generate
+Property BatchCount As %Integer [ InitialExpression = 1, Required ];
 
 /// Generator integer seed, if left empty, synthea will use a random seed
 Property Seed As %Integer;
 
 /// Transient property set to true after all output from current synthea run has been passed to the business host
 Property BatchComplete As %Boolean [ Transient ];
+
+Property CompletedBatchCount As %Integer [ Private, Transient ];
 
 Method OnInit() As %Status
 {
@@ -26,6 +31,7 @@ Method OnInit() As %Status
   s sc = $$$OK
   try {
     s ..BatchComplete = 0
+    s ..CompletedBatchCount = 0
   } catch (ex) {
     s sc = ex.AsStatus()
   }
@@ -39,12 +45,15 @@ Method OnTask() As %Status
   
   s sc = $$$OK
   try {
-    s ..BatchComplete = 0
-    $$$TOE(sc,..CleanOutputDirectory())
-    $$$TOE(sc,..RunSynthea())
-    $$$TOE(sc,..ProcessSyntheaOutput())
-    s ..BatchComplete = 1
-    $$$TOE(sc,..BusinessHost.ProcessInput($$$NULLOREF))
+    if ..CompletedBatchCount < ..BatchCount {
+      s ..BatchComplete = 0
+      $$$TOE(sc,..CleanOutputDirectory())
+      $$$TOE(sc,..RunSynthea())
+      $$$TOE(sc,..ProcessSyntheaOutput())
+      s ..BatchComplete = 1
+      $$$TOE(sc,..BusinessHost.ProcessInput($$$NULLOREF))
+      s ..CompletedBatchCount = ..CompletedBatchCount + 1
+    }
   } catch (ex) {
     s sc = ex.AsStatus()
   }
