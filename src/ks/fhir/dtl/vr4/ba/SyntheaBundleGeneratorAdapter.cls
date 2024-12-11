@@ -4,10 +4,10 @@ Class ks.fhir.dtl.vr4.ba.SyntheaBundleGeneratorAdapter Extends Ens.InboundAdapte
 Parameter SETTINGS = "CallInterval,SyntheaHome,SyntheaOutputDirectory,PatientCount,Seed";
 
 /// Synthea home directory
-Property SyntheaHome As %String(MAXLEN = 1024) [ InitialExpression = "/irisbuild/syntheza" ];
+Property SyntheaHome As %String(MAXLEN = 1024) [ InitialExpression = {^RepositoryRoot_"/synthea"} ];
 
 /// Synthea output directory, CAVEAT: will be cleaned up on init
-Property SyntheaOutputDirectory As %String(MAXLEN = 1024) [ InitialExpression = "/irisbuild/synthea/output/fhir" ];
+Property SyntheaOutputDirectory As %String(MAXLEN = 1024) [ InitialExpression = {^RepositoryRoot_"/synthea/output/fhir"} ];
 
 /// Number of patients to generate per batch
 Property PatientCount As %Integer [ InitialExpression = 1, Required ];
