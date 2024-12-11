@@ -3,8 +3,8 @@
 	<Document name="ks-fhir-gen.ZPM">
 		<Module>
 			<Name>ks-fhir-gen</Name>
-			<Version>1.0.1</Version>
-			<Description>Keen Solutions FHIR data generator</Description>
+			<Version>1.0.0</Version>
+			<Description>Keen Solutions HL7 FHIR data generator</Description>
 			<Author>
 				<Person>Robert Barbiaux</Person>
 				<Organization>Keen Solutions</Organization>
