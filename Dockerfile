@@ -2,31 +2,23 @@ ARG IMAGE=intersystemsdc/irishealth-community
 ARG VERSION=latest
 FROM $IMAGE:$VERSION
 
+ARG TESTS=0
+ARG MODULE="dc-sample"
+ARG NAMESPACE="IRISAPP"
+
+WORKDIR /home/irisowner/dev
+ENV HOMEDIR=/home/irisowner/dev
+ENV NAMESPACE=$NAMESPACE
+
+## install synthea
 ENV JAVA_HOME=/opt/java/openjdk
 COPY --from=eclipse-temurin:21 $JAVA_HOME $JAVA_HOME
 ENV PATH="${JAVA_HOME}/bin:${PATH}"
-
-USER root
-
-WORKDIR /opt/irisbuild
-RUN chown -R ${ISC_PACKAGE_MGRUSER}:${ISC_PACKAGE_IRISGROUP} /opt/irisbuild
-
-USER ${ISC_PACKAGE_MGRUSER}
-
 COPY synthea synthea
-COPY src src
-# COPY module.xml module.xml
-COPY iris.script iris.script
 
-USER root
-RUN chown -R ${ISC_PACKAGE_MGRUSER}:${ISC_PACKAGE_IRISGROUP} /opt/irisbuild
-USER ${ISC_PACKAGE_MGRUSER}
-
-RUN <<EOF
-cd synthea
-./run_synthea -s 12345 -p 10
-cd ..
+RUN --mount=type=bind,src=.,dst=. <<EOF
 iris start IRIS
 iris session IRIS < iris.script
+([ $TESTS -eq 0 ] || iris session iris -U $NAMESPACE "##class(%ZPM.PackageManager).Shell(\"test $MODULE -v -only\",1,1)")
 iris stop IRIS quietly
 EOF

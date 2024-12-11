@@ -13,8 +13,8 @@
 			</Author>
 			<Packaging>module</Packaging>
 			<SystemRequirements Version=">=2024.1" Interoperability="enabled"/>
-			 <Resource Directory="src" Name="ks-fhir-gen.PKG"/> 
-			<SourcesRoot>/src</SourcesRoot>
+			<SourcesRoot>src</SourcesRoot>
+  		    <Resource Name="ks.fhir.PKG"/> 
 			<UnitTest Name="/test/src" Package="ut.ks.fhir" Phase="test"/> 
 			<Dependencies>
 				<ModuleReference>

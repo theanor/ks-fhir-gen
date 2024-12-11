@@ -1,22 +1,29 @@
  zn "%SYS"
+ ; Unexpire passwords and set up passwordless mode to simplify dev use.
+ ; CAVEAT : do not do this in production environments
  d ##class(Security.Users).UnExpireUserPasswords("*")
+ zpm "install passwordless"
 
- s namespace = "FHIR"
- 
+ s namespace = ##class(%SYSTEM.Util).GetEnviron("NAMESPACE")
+  
+ ; enable interoperability
  d ##class(%Library.EnsembleMgr).EnableNamespace(namespace)
  
- zn "HSLIB"
-  
- d ##class(HS.Util.Installer.Foundation).Install(namespace)
- 
+ ; install foundation namespace 
+ zn "HSLIB" 
+ d ##class(HS.Util.Installer.Foundation).Install(namespace) 
  s ^SYS("Security","CSP","AllowPrefix","/csp/healthshare/fhir/","%UnitTest.")=1
  
  zn namespace
 
- s ^RepositoryRoot="/irisrun/repo"  
+ ; Configure %UnitTest in IRISAPP to suit the VS Code extension
+ s ^UnitTestRoot="/usr/irissys/.vscode/IRISAPP/UnitTestRoot"
+ zpm "install vscode-per-namespace-settings"
+
+ ; setup globals used by ks.lib.test
+ s ^RepositoryRoot=##class(%SYSTEM.Util).GetEnviron("HOMEDIR")
  s ^UnitTestResourcesRoot=^RepositoryRoot_"/test/resource"
  s ^UnitTestRuntimeRoot=^RepositoryRoot_"/test/runtime"
- s ^UnitTestRoot=^RepositoryRoot_"/test/src"
  
  ;
  ; FHIR server not required for now, left for future extensions
@@ -28,6 +35,7 @@
  ;d ##class(HS.FHIRServer.Installer).InstallNamespace()
  ;d ##class(HS.FHIRServer.Installer).InstallInstance(appKey, strategyClass, metadataPackages)
 
- zpm "load /irisrun/repo -v"
-
+ 
+ zpm "load "_^RepositoryRoot_" -v":1:1
  halt
+ 
