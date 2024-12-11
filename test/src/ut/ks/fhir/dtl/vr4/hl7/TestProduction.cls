@@ -32,7 +32,7 @@ Method OnBeforeProductionStart() As %Status
     s sc = $$$OK
     try {
       $$$TOE(sc,..CreateMainDirTree())        
-      $$$TOE(sc,..ChangeSetting(..#PRODUCTION,"HL7ToFile","FilePath",^UnitTestRuntimeRoot,1))  // use global as ..Maindir uses ^UnitTestRoot in ks-lib 1.0.1
+      $$$TOE(sc,..ChangeSetting(..#PRODUCTION,"HL7ToFile","FilePath",..HL7OutputDir,1))  
     } catch (ex) {
       s sc = ex.AsStatus()
     }
