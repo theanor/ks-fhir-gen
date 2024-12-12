@@ -67,7 +67,7 @@ Method RunSynthea() As %Status [ Private ]
   
   s sc = $$$OK
   try {
-    s x = $zf(-1,"cd "_..SyntheaHome_" && ./run_synthea -p "_..PatientCount_$select(..Seed="":"",1:" -s "_..Seed))
+    d $zf(-1,"cd "_..SyntheaHome_" && ./run_synthea -p "_..PatientCount_$select(..Seed="":"",1:" -s "_..Seed))
   } catch (ex) {
     s sc = ex.AsStatus()
   }

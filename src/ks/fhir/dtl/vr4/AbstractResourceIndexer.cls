@@ -18,7 +18,7 @@ Method IndexBundle(bundle As HS.FHIR.DTL.vR4.Model.Resource.Bundle) As %Status
     #dim ex as %Exception.AbstractException
 
     #dim entry as HS.FHIR.DTL.vR4.Model.Element.Bundle.entry
-    #dim resource as HS.FHIR.DTL.vR4.Model.Base.Resource
+    #dim key as %String
     
     s sc = $$$OK
     try {
