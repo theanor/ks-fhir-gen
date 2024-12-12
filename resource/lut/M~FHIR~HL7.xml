@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <lookupTable>
     <entry key="http://terminology.hl7.org/CodeSystem/v2-0203">FHIR_IDENTIFIER_TYPE</entry>
     <entry key="https://github.com/synthetichealth/synthea">SYNTHEA_ID</entry>
