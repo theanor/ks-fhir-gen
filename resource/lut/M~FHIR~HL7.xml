@@ -21,4 +21,6 @@
     <entry key="http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode">IHE_FORMAT_CODE</entry>
     <entry key="http://terminology.hl7.org/CodeSystem/claim-type">FHIR_CLAIM_TYPE</entry>
     <entry key="http://terminology.hl7.org/CodeSystem/processpriority">FHIR_PROCESS_PRIORITY</entry>
+    <entry key="http://terminology.hl7.org/CodeSystem/observation-category">FHIR_OBSERVATION_CATEGORY</entry>
+    <entry key="http://unitsofmeasure.org">UCUM</entry>
 </lookupTable>
