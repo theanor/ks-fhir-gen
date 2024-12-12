@@ -14,6 +14,18 @@ XData RuleDefinition [ XMLNamespace = "http://www.intersystems.com/rule" ]
 <return>1</return>
 </when>
 </rule>
+<rule name="Transform ambulatory patient Encounter resource into ADT^A04" disabled="false">
+<when condition="(Resource.resourceType=&quot;Encounter&quot;) &amp;&amp; (HL7PatientClass(Resource)=&quot;O&quot;) " comment="">
+<assign property="Transform" value="&quot;ks.fhir.dtl.vr4.hl7.EncounterToADTA04&quot;"></assign>
+<return>1</return>
+</when>
+</rule>
+<rule name="Transform observation into ORU^R01" disabled="false">
+<when condition="(Resource.resourceType=&quot;Observation&quot;)" comment="">
+<assign property="Transform" value="&quot;ks.fhir.dtl.vr4.hl7.ObservationToORUR01&quot;"></assign>
+<return>1</return>
+</when>
+</rule>
 <return>0</return>
 </ruleSet>
 </ruleDefinition>
