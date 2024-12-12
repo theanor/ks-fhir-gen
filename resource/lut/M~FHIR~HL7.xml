@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<lookupTable>
+    <entry key="http://terminology.hl7.org/CodeSystem/v2-0203">FHIR_IDENTIFIER_TYPE</entry>
+    <entry key="https://github.com/synthetichealth/synthea">SYNTHEA_ID</entry>
+    <entry key="http://hospital.smarthealthit.org">SMART_IT_ID</entry>
+    <entry key="http://hl7.org/fhir/sid/us-ssn">FHIR_SID_US_SSN</entry>
+    <entry key="urn:oid:2.16.840.1.113883.4.3.25">DRIVER_LIC_NUM</entry>
+    <entry key="http://hl7.org/fhir/sid/passport-USA">FHIR_SID_US_PASSPORT</entry>
+    <entry key="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus">FHIR_MARITAL_STATUS</entry>
+    <entry key="urn:ietf:bcp:47">IETF_BCP_47</entry>
+    <entry key="http://terminology.hl7.org/CodeSystem/v3-ActCode">FHIR_ACT_CODE</entry>
+    <entry key="http://snomed.info/sct">SCT_ID</entry>
+    <entry key="http://terminology.hl7.org/CodeSystem/v3-ParticipationType">FHIR_PARTICIPATION_TYPE</entry>
+    <entry key="http://terminology.hl7.org/CodeSystem/condition-clinical">FHIR_CONDITION_CLINICAL</entry>
+    <entry key="http://terminology.hl7.org/CodeSystem/condition-ver-status">
+        FHIR_CONDITION_VER_STATUS</entry>
+    <entry key="http://terminology.hl7.org/CodeSystem/condition-category">FHIR_CONDITION_CATEGORY</entry>
+    <entry key="http://loinc.org">LOINC_CODE</entry>
+    <entry key="http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category">
+        FHIR_DOC_REF_CATEGORY</entry>
+    <entry key="http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode">IHE_FORMAT_CODE</entry>
+    <entry key="http://terminology.hl7.org/CodeSystem/claim-type">FHIR_CLAIM_TYPE</entry>
+    <entry key="http://terminology.hl7.org/CodeSystem/processpriority">FHIR_PROCESS_PRIORITY</entry>
+</lookupTable>

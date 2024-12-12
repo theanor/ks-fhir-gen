@@ -3,6 +3,10 @@ Class ks.fhir.dtl.vr4.hl7.Commons Extends Ens.Rule.FunctionSet [ Abstract ]
 
 Parameter FHIResourceType;
 
+Parameter CodeSystemLookupTable = "M~FHIR~HL7";
+
+Parameter DefaultCodeSystem = "UNKNOWN_CODE_SYSTEM";
+
 ClassMethod HL7Gender(value As %String) As %String [ CodeMode = expression ]
 {
 $case(value,"":"","male":"M","female":"F",:"U")
@@ -18,9 +22,14 @@ ClassMethod HL7DateTime(value As %String) As %String [ CodeMode = expression ]
 ##class(Ens.Util.FunctionSet).ConvertDateTime(##class(%DateTime).XSDToLogical(value),"%Y-%m-%d %H:%M:%S","%q(0)")
 }
 
+ClassMethod HL7CodeSystem(fhirSystem As %String, default As %String = {..#DefaultCodeSystem}) As %String [ CodeMode = expression ]
+{
+##class(Ens.Util.FunctionSet).Lookup(..#CodeSystemLookupTable,fhirSystem,default)
+}
+
 ClassMethod HL7CX(value As HS.FHIR.DTL.vR4.Model.Datatype.Identifier, segment As EnsLib.HL7.Segment) As %String [ CodeMode = expression ]
 {
-$listtostring($listbuild(segment.Escape(value.value),"","",segment.Escape(value.assigner),segment.Escape(value.type.coding.GetAt(1).code),segment.Escape(value.type.coding.GetAt(1).system)),$extract(segment.Separators,2))
+$listtostring($listbuild(segment.Escape(value.value),"","",segment.Escape(value.assigner),segment.Escape(value.type.coding.GetAt(1).code),segment.Escape(..HL7CodeSystem(value.type.coding.GetAt(1).system))),$extract(segment.Separators,2))
 }
 
 ClassMethod HL7PatientClass(encounter As HS.FHIR.DTL.vR4.Model.Resource.Encounter) As %String [ CodeMode = expression ]
