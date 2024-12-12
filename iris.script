@@ -24,6 +24,7 @@
  s ^RepositoryRoot=##class(%SYSTEM.Util).GetEnviron("HOMEDIR")
  s ^UnitTestResourcesRoot=^RepositoryRoot_"/test/resource"
  s ^UnitTestRuntimeRoot=^RepositoryRoot_"/test/runtime"
+ s ^UnitTestRoot=^UnitTestRuntimeRoot
  
  ;
  ; FHIR server not required for now, left for future extensions
