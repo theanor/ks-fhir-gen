@@ -64,10 +64,17 @@ Method RunSynthea() As %Status [ Private ]
 {
   #dim sc as %Status
   #dim ex as %Exception.AbstractException
+
+  #dim cmd as %String
+  #dim ret as %Integer
   
   s sc = $$$OK
   try {
-    d $zf(-1,"cd "_..SyntheaHome_" && ./run_synthea -p "_..PatientCount_$select(..Seed="":"",1:" -s "_..Seed))
+    s cmd = "(cd "_..SyntheaHome_" && ./run_synthea -p "_..PatientCount_$select(..Seed="":"",1:" -s "_..Seed)_")"
+    $$$TRACE("$zf(-100) command : "_cmd)
+    s ret = $zf(-100,"/SHELL/NOQUOTE",cmd)
+    $$$TRACE("$zf(-100) return code : "_ret)
+    if ret '= 0 throw ##class(%Exception.General).%New("synthea run failed : "_##class(%SYSTEM.Process).OSError())
   } catch (ex) {
     s sc = ex.AsStatus()
   }
