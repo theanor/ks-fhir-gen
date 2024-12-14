@@ -1,5 +1,5 @@
 ARG IMAGE=intersystemsdc/irishealth-community
-ARG VERSION=2024.3
+ARG VERSION=2024.3-zpm
 FROM $IMAGE:$VERSION
 
 ARG TESTS=0
