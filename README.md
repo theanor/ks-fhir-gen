@@ -157,7 +157,7 @@ test\resource\fhir
 
 ### Code system LUT
 
-resource\lut\M~FHIR~HL7.xml
+resource\lut\M\~FHIR\~HL7.xml
 
 ### HL7 output of the test production
 
