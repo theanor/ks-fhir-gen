@@ -57,6 +57,8 @@ Launch ZPM and run the unit tests
 IRISAPP>zpm "test ks-fhir-gen -v"
 ```
 
+If the test interoperability production fails, it may be because of the time Synthea takes to initialize the first time (during first run, it downloads gradle and builds). To allow it to run for a longer time, change the MINRUN parameter in [ut.ks.fhir.dtl.vr4.hl7.TestProduction](https://github.com/theanor/ks-fhir-gen/blob/main/test/src/ut/ks/fhir/dtl/vr4/hl7/TestProduction.cls)
+
 To exit the terminal, do any of the following:
 
 ```
