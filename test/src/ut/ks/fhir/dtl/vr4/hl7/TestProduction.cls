@@ -5,7 +5,7 @@ Parameter PRODUCTION = "ut.ks.fhir.dtl.vr4.hl7.Production";
 
 Parameter IGNOREPRODUCTIONERRORS = 1;
 
-Parameter MINRUN = 20;
+Parameter MINRUN = 120;
 
 Method OnBeforeAllTests() As %Status
 {
