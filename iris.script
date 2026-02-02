@@ -37,6 +37,6 @@
  ;d ##class(HS.FHIRServer.Installer).InstallInstance(appKey, strategyClass, metadataPackages)
 
  
- zpm "load "_^RepositoryRoot_" -v":1:1
+ zpm "load -dev -verbose "_^RepositoryRoot:1:1
  halt
  
